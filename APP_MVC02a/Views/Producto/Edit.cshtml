@@ -1,0 +1,80 @@
+﻿@model APP_MVC02a.Models.producto
+
+@{
+    ViewBag.Title = "Modificar Producto";
+}
+
+<h2>Modificar Producto</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        
+
+        @Html.HiddenFor(model => model.idproducto)
+
+        <div class="editor-label">
+            Nombre:
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nomProducto)
+            @Html.ValidationMessageFor(model => model.nomProducto)
+        </div>
+
+        <div class="editor-label">
+            Descripcion:
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.descProd)
+            @Html.ValidationMessageFor(model => model.descProd)
+        </div>
+
+        <div class="editor-label">
+            Precio:
+        </div>
+        <div class="editor-field">
+            
+            <input type="text" value="@Model.precio" name="precio" id="precio" />
+        </div>
+
+        <div class="editor-label">
+           Imagen de Producto:
+        </div>
+        <div class="editor-field">
+            @* @Html.EditorFor(model => model.nomFoto)  
+            @Html.ValidationMessageFor(model => model.nomFoto) *@
+            <img src="~/imagenes/productosimg/@Url.Content(Model.nomFoto)" width="300px" height="260px" />
+             <input type="file" name="archivo" value="" />
+            <input type="hidden" name="nomFoto" id="nomFoto" value="@Url.Content(Model.nomFoto)" />
+        </div>
+
+        <div class="editor-label">
+            Estado:
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idestado", String.Empty)
+            @Html.ValidationMessageFor(model => model.idestado)
+        </div>
+
+        <div class="editor-label">
+            Categoria:
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idcategoriaProd", String.Empty)
+            @Html.ValidationMessageFor(model => model.idcategoriaProd)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Regresar al Listado", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

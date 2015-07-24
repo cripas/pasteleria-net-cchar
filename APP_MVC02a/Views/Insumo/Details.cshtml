@@ -1,0 +1,50 @@
+﻿@model APP_MVC02a.Models.insumo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>insumo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nomInsumo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nomInsumo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stock)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stock)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaVenc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaVenc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tipo_medida.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tipo_medida.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.categoriaIn.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.categoriaIn.descrip)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.idinsumo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

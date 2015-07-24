@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "CategoriaxProducto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Reporte de productos por categoria</h2>
+<form action="CategoriaxProducto1" method="post" target="iFraverReporte">
+<fieldset>
+       <table>
+           <tr>
+               <td>Categoria:
+                   @Html.DropDownList("idcategoriaProd")
+               </td>
+               </tr>
+            
+       </table>
+       <input type="submit"  value="Consultar"/>
+   </fieldset>
+</form>
+<iframe id="iFraverReporte"  name="iFraverReporte" width="1000" height="450">
+
+</iframe>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+

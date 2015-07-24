@@ -1,0 +1,92 @@
+﻿@model APP_MVC02a.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Cliente</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nombre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.apePaterno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.apePaterno)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.apeMaterno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.apeMaterno)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.dni)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.dni)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ruc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ruc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaNac)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaNac)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaRegistro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaRegistro)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.idrol)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.idrol)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.idestado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.idestado)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.clave)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.clave)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.idCliente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

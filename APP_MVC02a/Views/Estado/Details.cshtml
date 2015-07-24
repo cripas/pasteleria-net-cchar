@@ -1,0 +1,22 @@
+﻿@model APP_MVC02a.Models.estado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>estado</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descrip)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.idestado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

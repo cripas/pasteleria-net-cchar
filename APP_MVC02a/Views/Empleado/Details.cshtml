@@ -1,0 +1,92 @@
+﻿@model APP_MVC02a.Models.empleado
+
+@{
+    ViewBag.Title = "Detalle de Empleado";
+}
+
+<h2>Detalle de Empleado</h2>
+
+<fieldset>
+    <legend>Empleado</legend>
+
+    <div class="display-label">
+         NOMBRE
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nombre)
+    </div>
+
+    <div class="display-label">
+         APELLIDO PATERNO
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.apePat)
+    </div>
+
+    <div class="display-label">
+         APELLIDO MATERNO
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.apeMate)
+    </div>
+
+    <div class="display-label">
+         DIRECCIÓN
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.direccion)
+    </div>
+
+    <div class="display-label">
+         DNI
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.dni)
+    </div>
+
+    <div class="display-label">
+         CORREO ELECTRÓNICO
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="display-label">
+         FECHA DE REGISTRO
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaRegistro)
+    </div>
+
+    <div class="display-label">
+         CLAVE
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.clave)
+    </div>
+
+    <div class="display-label">
+         ESTADO
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado.descrip)
+    </div>
+
+    <div class="display-label">
+         ROL
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.rol.descrip)
+    </div>
+
+    <div class="display-label">
+         DISTRITO
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.distrito.descrip)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id=Model.idempleado }) |
+    @Html.ActionLink("Regresar al listado", "Index")
+</p>

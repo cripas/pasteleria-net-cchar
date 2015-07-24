@@ -1,0 +1,371 @@
+C:\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll.config
+C:\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Net.Http.Formatting.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.WebHost.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Net.Http.Formatting.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.WebHost.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Net.Http.Formatting.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Http.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Http.WebHost.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+F:\CiberLab05\Desarrollo Web\Sesion02\parteb\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PRACTICAFINALCHAR\PROYECTO FINAL FINAL\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+D:\workspace_C#\PO3 PRY2\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll.config
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Net.Http.Formatting.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.WebHost.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Net.Http.Formatting.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.WebHost.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Http.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\xt2886\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll.config
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Net.Http.Formatting.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.WebHost.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Net.Http.Formatting.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Http.WebHost.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Http.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\Cibertec\Desktop\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\romarioVArgas\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\APP_MVC02a.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Antlr3.Runtime.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\RestSharp.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Optimization.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Providers.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Api.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Mvc.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Twiml.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\WebGrease.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\RestSharp.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\EntityFramework.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Newtonsoft.Json.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Mvc.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.Razor.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\System.Web.WebPages.Razor.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Api.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Api.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Mvc.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Mvc.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Twiml.pdb
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\Twilio.Twiml.xml
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\EntityFramework.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Providers.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.csprojResolveAssemblyReference.cache
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.dll
+C:\Users\User-Pc\Desktop\PROYECTO_C#_FINAL_COMPLETO\PROYECTO_FINAL_FINAL_FINAL\FINAL 5\PROYECTO_C#_FINAL_V5\PO3 PRY2\APP_MVC02a\APP_MVC02a\obj\Debug\APP_MVC02a.pdb

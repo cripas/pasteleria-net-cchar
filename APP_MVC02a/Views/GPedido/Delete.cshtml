@@ -1,0 +1,179 @@
+﻿@model APP_MVC02a.Models.pedido
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>pedido</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contacto_nom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contacto_nom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contacto_ape)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contacto_ape)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contacto_mail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contacto_mail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contacto_fijo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contacto_fijo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contacto_movil)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contacto_movil)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tipoentrega)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tipoentrega)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaPedido)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaPedido)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaentrega)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaentrega)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tcomprobante)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tcomprobante)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ruc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ruc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.razonsocial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.razonsocial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.entrega_dir)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.entrega_dir)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.entrega_urba)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.entrega_urba)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.subTotal)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.subTotal)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.igv)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.igv)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.totalpedido)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.totalpedido)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.notas)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.notas)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cliente.nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cliente.nombre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.distrito.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.distrito.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tipo_compPago.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tipo_compPago.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TIPO_PAGO.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TIPO_PAGO.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.entrega_ref)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.entrega_ref)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

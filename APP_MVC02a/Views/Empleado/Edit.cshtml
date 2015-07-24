@@ -1,0 +1,117 @@
+﻿@model APP_MVC02a.Models.empleado
+
+@{
+    ViewBag.Title = "Editar Empleado";
+}
+
+<h2>Editar Empleado</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Empleado</legend>
+
+        @Html.HiddenFor(model => model.idempleado)
+
+        <div class="editor-label">
+            NOMBRE
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nombre)
+            @Html.ValidationMessageFor(model => model.nombre)
+        </div>
+
+        <div class="editor-label">
+            APELLIDO PATERNO
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.apePat)
+            @Html.ValidationMessageFor(model => model.apePat)
+        </div>
+
+        <div class="editor-label">
+            APELLIDO MATERNO
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.apeMate)
+            @Html.ValidationMessageFor(model => model.apeMate)
+        </div>
+
+        <div class="editor-label">
+            DIRECCIÓN
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.direccion)
+            @Html.ValidationMessageFor(model => model.direccion)
+        </div>
+
+        <div class="editor-label">
+            DNI
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dni)
+            @Html.ValidationMessageFor(model => model.dni)
+        </div>
+
+        <div class="editor-label">
+            CORREO ELECTRÓNICO
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.email)
+            @Html.ValidationMessageFor(model => model.email)
+        </div>
+
+        <div class="editor-label">
+            FECHA DE REGISTRO
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fechaRegistro)
+            @Html.ValidationMessageFor(model => model.fechaRegistro)
+        </div>
+
+        <div class="editor-label">
+            CLAVE
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.clave)
+            @Html.ValidationMessageFor(model => model.clave)
+        </div>
+
+        <div class="editor-label">
+            ESTADO
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idestado", String.Empty)
+            @Html.ValidationMessageFor(model => model.idestado)
+        </div>
+
+        <div class="editor-label">
+            ROL
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idrol", String.Empty)
+            @Html.ValidationMessageFor(model => model.idrol)
+        </div>
+
+        <div class="editor-label">
+            DISTRITO
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("iddistrito", String.Empty)
+            @Html.ValidationMessageFor(model => model.iddistrito)
+        </div>
+
+        <p>
+            <input type="submit" value="Guardar" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Regresar al listado", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

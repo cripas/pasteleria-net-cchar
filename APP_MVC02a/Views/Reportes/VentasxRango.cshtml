@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "VentasxRango";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reporte de Pedidos por Fechas</h2>
+<form action="VentasxRango1" method="post" target="iFraverReporte">
+    <fieldset>
+        <table>
+            <tr>
+                <td>
+                    Desde:
+                    <input type="text" name="fecha1" id="fecha1" />
+                </td>
+                <td>
+                    hasta:
+                    <input type="text" name="fecha2" id="fecha2" />
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Consultar" />
+    </fieldset>
+</form>
+<iframe id="iFraverReporte" name="iFraverReporte" width="1000" height="450"></iframe>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>
+<script>
+    $("#fecha1").datepicker({ dateFormat: "dd/mm/yy" }).mask("99/99/9999");
+    $.validator.addMethod('date',
+    function (value, element, params) {
+        if (this.optional(element)) {
+            return true;
+        }
+        var ok = true;
+        try {
+            $.datepicker.parseDate('dd/mm/yy', value);
+        }
+        catch (err) {
+            ok = false;
+        }
+        return ok;
+    });
+
+</script>
+
+<script>
+    $("#fecha2").datepicker({ dateFormat: "dd/mm/yy" }).mask("99/99/9999");
+    $.validator.addMethod('date',
+    function (value, element, params) {
+        if (this.optional(element)) {
+            return true;
+        }
+        var ok = true;
+        try {
+            $.datepicker.parseDate('dd/mm/yy', value);
+        }
+        catch (err) {
+            ok = false;
+        }
+        return ok;
+    });
+
+</script>

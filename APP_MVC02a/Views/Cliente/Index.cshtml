@@ -1,0 +1,104 @@
+﻿@model IEnumerable<APP_MVC02a.Models.Cliente>
+
+@{
+    ViewBag.Title = "Mantenimiento de Cliente";
+}
+
+<script src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" type="text/javascript"></script>
+<link href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    $(function () {
+        $("#idListadoCliente").dataTable();
+
+    });
+
+</script>
+
+
+<h2>Listado de Clientes</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-success btn-flat">Registrar Nuevo</a>
+</p>
+    <table id="idListadoCliente" class="table table-bordered table-striped table-condensed table-hover">
+        <tr>
+            <th>ID
+            </th>
+            <th>NOMBRE
+            </th>
+            <th>A. PATERNO
+            </th>
+            <th>A. MATERNO
+            </th>
+            <th>EMAIL
+            </th>
+            <th>DNI
+            </th>
+            <th>RUC
+            </th>
+            <th>FECHA NACIMIENTO
+            </th>
+            <th>FECHA REGISTRO
+            </th>
+            <th>ESTADO
+            </th>
+            <th>ROL
+            </th>
+             <th>CLAVE
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apePaterno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apeMaterno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dni)
+                </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.ruc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaNac)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaRegistro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.estado.descrip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rol.descrip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.clave)
+                </td>
+
+           <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.idCliente }) |
+            @Html.ActionLink("Ver Detalle", "Details", new { id = item.idCliente }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.idCliente })
+
+                </td>
+            </tr>
+        }
+
+
+
+    </table>

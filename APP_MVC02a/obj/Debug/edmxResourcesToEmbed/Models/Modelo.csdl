@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdpasteleliasModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bdpasteleliasEntities2" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Carrito" EntityType="bdpasteleliasModel.Carrito" />
+    <EntitySet Name="categoriaIn" EntityType="bdpasteleliasModel.categoriaIn" />
+    <EntitySet Name="categoriaProd" EntityType="bdpasteleliasModel.categoriaProd" />
+    <EntitySet Name="Cliente" EntityType="bdpasteleliasModel.Cliente" />
+    <EntitySet Name="datosProduccion" EntityType="bdpasteleliasModel.datosProduccion" />
+    <EntitySet Name="distrito" EntityType="bdpasteleliasModel.distrito" />
+    <EntitySet Name="empleado" EntityType="bdpasteleliasModel.empleado" />
+    <EntitySet Name="estado" EntityType="bdpasteleliasModel.estado" />
+    <EntitySet Name="estadoPed" EntityType="bdpasteleliasModel.estadoPed" />
+    <EntitySet Name="insumo" EntityType="bdpasteleliasModel.insumo" />
+    <EntitySet Name="insumo_proveedor" EntityType="bdpasteleliasModel.insumo_proveedor" />
+    <EntitySet Name="maquinaria" EntityType="bdpasteleliasModel.maquinaria" />
+    <EntitySet Name="opciones" EntityType="bdpasteleliasModel.opciones" />
+    <EntitySet Name="ordenProduccion" EntityType="bdpasteleliasModel.ordenProduccion" />
+    <EntitySet Name="PAGO" EntityType="bdpasteleliasModel.PAGO" />
+    <EntitySet Name="pedido" EntityType="bdpasteleliasModel.pedido" />
+    <EntitySet Name="pedido_estados" EntityType="bdpasteleliasModel.pedido_estados" />
+    <EntitySet Name="pedido_productos" EntityType="bdpasteleliasModel.pedido_productos" />
+    <EntitySet Name="producto" EntityType="bdpasteleliasModel.producto" />
+    <EntitySet Name="Proveedor" EntityType="bdpasteleliasModel.Proveedor" />
+    <EntitySet Name="rol" EntityType="bdpasteleliasModel.rol" />
+    <EntitySet Name="Seguimiento" EntityType="bdpasteleliasModel.Seguimiento" />
+    <EntitySet Name="tipo_compPago" EntityType="bdpasteleliasModel.tipo_compPago" />
+    <EntitySet Name="tipo_medida" EntityType="bdpasteleliasModel.tipo_medida" />
+    <EntitySet Name="TIPO_PAGO" EntityType="bdpasteleliasModel.TIPO_PAGO" />
+    <AssociationSet Name="FK__Carrito__idprodu__6383C8BA" Association="bdpasteleliasModel.FK__Carrito__idprodu__6383C8BA">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="Carrito" EntitySet="Carrito" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insumo__idcatego__2C3393D0" Association="bdpasteleliasModel.FK__insumo__idcatego__2C3393D0">
+      <End Role="categoriaIn" EntitySet="categoriaIn" />
+      <End Role="insumo" EntitySet="insumo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__producto__idcate__24927208" Association="bdpasteleliasModel.FK__producto__idcate__24927208">
+      <End Role="categoriaProd" EntitySet="categoriaProd" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cliente__idestad__35BCFE0A" Association="bdpasteleliasModel.FK__Cliente__idestad__35BCFE0A">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cliente__idrol__34C8D9D1" Association="bdpasteleliasModel.FK__Cliente__idrol__34C8D9D1">
+      <End Role="rol" EntitySet="rol" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido__idClient__3A81B327" Association="bdpasteleliasModel.FK__pedido__idClient__3A81B327">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="pedido" EntitySet="pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seguimien__idCli__07C12930" Association="bdpasteleliasModel.FK__Seguimien__idCli__07C12930">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Seguimiento" EntitySet="Seguimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__datosProd__idord__4D94879B" Association="bdpasteleliasModel.FK__datosProd__idord__4D94879B">
+      <End Role="ordenProduccion" EntitySet="ordenProduccion" />
+      <End Role="datosProduccion" EntitySet="datosProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__empleado__iddist__182C9B23" Association="bdpasteleliasModel.FK__empleado__iddist__182C9B23">
+      <End Role="distrito" EntitySet="distrito" />
+      <End Role="empleado" EntitySet="empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido__iddistri__3B75D760" Association="bdpasteleliasModel.FK__pedido__iddistri__3B75D760">
+      <End Role="distrito" EntitySet="distrito" />
+      <End Role="pedido" EntitySet="pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__empleado__idesta__164452B1" Association="bdpasteleliasModel.FK__empleado__idesta__164452B1">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="empleado" EntitySet="empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__empleado__idrol__173876EA" Association="bdpasteleliasModel.FK__empleado__idrol__173876EA">
+      <End Role="rol" EntitySet="rol" />
+      <End Role="empleado" EntitySet="empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seguimien__idemp__06CD04F7" Association="bdpasteleliasModel.FK__Seguimien__idemp__06CD04F7">
+      <End Role="empleado" EntitySet="empleado" />
+      <End Role="Seguimiento" EntitySet="Seguimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__opciones__idesta__1B0907CE" Association="bdpasteleliasModel.FK__opciones__idesta__1B0907CE">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="opciones" EntitySet="opciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenProd__idest__4BAC3F29" Association="bdpasteleliasModel.FK__ordenProd__idest__4BAC3F29">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="ordenProduccion" EntitySet="ordenProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido__idestado__3D5E1FD2" Association="bdpasteleliasModel.FK__pedido__idestado__3D5E1FD2">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="pedido" EntitySet="pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__producto__idesta__239E4DCF" Association="bdpasteleliasModel.FK__producto__idesta__239E4DCF">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seguimien__idest__05D8E0BE" Association="bdpasteleliasModel.FK__Seguimien__idest__05D8E0BE">
+      <End Role="estado" EntitySet="estado" />
+      <End Role="Seguimiento" EntitySet="Seguimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido_es__idest__46E78A0C" Association="bdpasteleliasModel.FK__pedido_es__idest__46E78A0C">
+      <End Role="estadoPed" EntitySet="estadoPed" />
+      <End Role="pedido_estados" EntitySet="pedido_estados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insumo__idtipo_m__2B3F6F97" Association="bdpasteleliasModel.FK__insumo__idtipo_m__2B3F6F97">
+      <End Role="tipo_medida" EntitySet="tipo_medida" />
+      <End Role="insumo" EntitySet="insumo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insumo_pr__idins__5CD6CB2B" Association="bdpasteleliasModel.FK__insumo_pr__idins__5CD6CB2B">
+      <End Role="insumo" EntitySet="insumo" />
+      <End Role="insumo_proveedor" EntitySet="insumo_proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__insumo_pr__idPro__5BE2A6F2" Association="bdpasteleliasModel.FK__insumo_pr__idPro__5BE2A6F2">
+      <End Role="Proveedor" EntitySet="Proveedor" />
+      <End Role="insumo_proveedor" EntitySet="insumo_proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ordenProd__idped__4AB81AF0" Association="bdpasteleliasModel.FK__ordenProd__idped__4AB81AF0">
+      <End Role="pedido" EntitySet="pedido" />
+      <End Role="ordenProduccion" EntitySet="ordenProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PAGO__idpedido__60A75C0F" Association="bdpasteleliasModel.FK__PAGO__idpedido__60A75C0F">
+      <End Role="pedido" EntitySet="pedido" />
+      <End Role="PAGO" EntitySet="PAGO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido__idtipo_c__3C69FB99" Association="bdpasteleliasModel.FK__pedido__idtipo_c__3C69FB99">
+      <End Role="tipo_compPago" EntitySet="tipo_compPago" />
+      <End Role="pedido" EntitySet="pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido__idtipopa__3E52440B" Association="bdpasteleliasModel.FK__pedido__idtipopa__3E52440B">
+      <End Role="TIPO_PAGO" EntitySet="TIPO_PAGO" />
+      <End Role="pedido" EntitySet="pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido_es__idped__45F365D3" Association="bdpasteleliasModel.FK__pedido_es__idped__45F365D3">
+      <End Role="pedido" EntitySet="pedido" />
+      <End Role="pedido_estados" EntitySet="pedido_estados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido_pr__idped__412EB0B6" Association="bdpasteleliasModel.FK__pedido_pr__idped__412EB0B6">
+      <End Role="pedido" EntitySet="pedido" />
+      <End Role="pedido_productos" EntitySet="pedido_productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seguimien__idped__04E4BC85" Association="bdpasteleliasModel.FK__Seguimien__idped__04E4BC85">
+      <End Role="pedido" EntitySet="pedido" />
+      <End Role="Seguimiento" EntitySet="Seguimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__pedido_pr__idpro__4222D4EF" Association="bdpasteleliasModel.FK__pedido_pr__idpro__4222D4EF">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="pedido_productos" EntitySet="pedido_productos" />
+    </AssociationSet>
+    <AssociationSet Name="acceso" Association="bdpasteleliasModel.acceso">
+      <End Role="opciones" EntitySet="opciones" />
+      <End Role="rol" EntitySet="rol" />
+    </AssociationSet>
+    <AssociationSet Name="ordenPro_maqui" Association="bdpasteleliasModel.ordenPro_maqui">
+      <End Role="maquinaria" EntitySet="maquinaria" />
+      <End Role="ordenProduccion" EntitySet="ordenProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="ordenProd_Empleado" Association="bdpasteleliasModel.ordenProd_Empleado">
+      <End Role="empleado" EntitySet="empleado" />
+      <End Role="ordenProduccion" EntitySet="ordenProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="producto_insumo" Association="bdpasteleliasModel.producto_insumo">
+      <End Role="insumo" EntitySet="insumo" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Carrito">
+    <Key>
+      <PropertyRef Name="RecordId" />
+    </Key>
+    <Property Name="RecordId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CartId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="idproducto" Type="Int32" Nullable="false" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="producto" Relationship="bdpasteleliasModel.FK__Carrito__idprodu__6383C8BA" FromRole="Carrito" ToRole="producto" />
+  </EntityType>
+  <EntityType Name="categoriaIn">
+    <Key>
+      <PropertyRef Name="idcategoriaIn" />
+    </Key>
+    <Property Name="idcategoriaIn" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="insumo" Relationship="bdpasteleliasModel.FK__insumo__idcatego__2C3393D0" FromRole="categoriaIn" ToRole="insumo" />
+  </EntityType>
+  <EntityType Name="categoriaProd">
+    <Key>
+      <PropertyRef Name="idcategoriaProd" />
+    </Key>
+    <Property Name="idcategoriaProd" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="producto" Relationship="bdpasteleliasModel.FK__producto__idcate__24927208" FromRole="categoriaProd" ToRole="producto" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="idCliente" />
+    </Key>
+    <Property Name="idCliente" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apePaterno" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apeMaterno" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dni" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ruc" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="fechaNac" Type="DateTime" Precision="0" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="idrol" Type="Int32" Nullable="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <Property Name="clave" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__Cliente__idestad__35BCFE0A" FromRole="Cliente" ToRole="estado" />
+    <NavigationProperty Name="rol" Relationship="bdpasteleliasModel.FK__Cliente__idrol__34C8D9D1" FromRole="Cliente" ToRole="rol" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido__idClient__3A81B327" FromRole="Cliente" ToRole="pedido" />
+    <NavigationProperty Name="Seguimiento" Relationship="bdpasteleliasModel.FK__Seguimien__idCli__07C12930" FromRole="Cliente" ToRole="Seguimiento" />
+  </EntityType>
+  <EntityType Name="datosProduccion">
+    <Key>
+      <PropertyRef Name="idordenProduccion" />
+    </Key>
+    <Property Name="idordenProduccion" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="fechaInicio" Type="DateTime" Precision="3" />
+    <Property Name="fechaFin" Type="DateTime" Precision="3" />
+    <Property Name="fechaSalida" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ordenProduccion" Relationship="bdpasteleliasModel.FK__datosProd__idord__4D94879B" FromRole="datosProduccion" ToRole="ordenProduccion" />
+  </EntityType>
+  <EntityType Name="distrito">
+    <Key>
+      <PropertyRef Name="iddistrito" />
+    </Key>
+    <Property Name="iddistrito" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="empleado" Relationship="bdpasteleliasModel.FK__empleado__iddist__182C9B23" FromRole="distrito" ToRole="empleado" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido__iddistri__3B75D760" FromRole="distrito" ToRole="pedido" />
+  </EntityType>
+  <EntityType Name="empleado">
+    <Key>
+      <PropertyRef Name="idempleado" />
+    </Key>
+    <Property Name="idempleado" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apePat" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="apeMate" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="direccion" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="dni" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="clave" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <Property Name="idrol" Type="Int32" Nullable="false" />
+    <Property Name="iddistrito" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="distrito" Relationship="bdpasteleliasModel.FK__empleado__iddist__182C9B23" FromRole="empleado" ToRole="distrito" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__empleado__idesta__164452B1" FromRole="empleado" ToRole="estado" />
+    <NavigationProperty Name="rol" Relationship="bdpasteleliasModel.FK__empleado__idrol__173876EA" FromRole="empleado" ToRole="rol" />
+    <NavigationProperty Name="Seguimiento" Relationship="bdpasteleliasModel.FK__Seguimien__idemp__06CD04F7" FromRole="empleado" ToRole="Seguimiento" />
+    <NavigationProperty Name="ordenProduccion" Relationship="bdpasteleliasModel.ordenProd_Empleado" FromRole="empleado" ToRole="ordenProduccion" />
+  </EntityType>
+  <EntityType Name="estado">
+    <Key>
+      <PropertyRef Name="idestado" />
+    </Key>
+    <Property Name="idestado" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Cliente" Relationship="bdpasteleliasModel.FK__Cliente__idestad__35BCFE0A" FromRole="estado" ToRole="Cliente" />
+    <NavigationProperty Name="empleado" Relationship="bdpasteleliasModel.FK__empleado__idesta__164452B1" FromRole="estado" ToRole="empleado" />
+    <NavigationProperty Name="opciones" Relationship="bdpasteleliasModel.FK__opciones__idesta__1B0907CE" FromRole="estado" ToRole="opciones" />
+    <NavigationProperty Name="ordenProduccion" Relationship="bdpasteleliasModel.FK__ordenProd__idest__4BAC3F29" FromRole="estado" ToRole="ordenProduccion" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido__idestado__3D5E1FD2" FromRole="estado" ToRole="pedido" />
+    <NavigationProperty Name="producto" Relationship="bdpasteleliasModel.FK__producto__idesta__239E4DCF" FromRole="estado" ToRole="producto" />
+    <NavigationProperty Name="Seguimiento" Relationship="bdpasteleliasModel.FK__Seguimien__idest__05D8E0BE" FromRole="estado" ToRole="Seguimiento" />
+    <Property Type="Int32" Name="cnPedido" />
+  </EntityType>
+  <EntityType Name="estadoPed">
+    <Key>
+      <PropertyRef Name="idestadoPed" />
+    </Key>
+    <Property Name="idestadoPed" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="pedido_estados" Relationship="bdpasteleliasModel.FK__pedido_es__idest__46E78A0C" FromRole="estadoPed" ToRole="pedido_estados" />
+  </EntityType>
+  <EntityType Name="insumo">
+    <Key>
+      <PropertyRef Name="idinsumo" />
+    </Key>
+    <Property Name="idinsumo" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nomInsumo" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="stock" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="fechaVenc" Type="DateTime" Precision="0" />
+    <Property Name="idtipo_medida" Type="Int32" Nullable="false" />
+    <Property Name="idcategoriaIn" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="categoriaIn" Relationship="bdpasteleliasModel.FK__insumo__idcatego__2C3393D0" FromRole="insumo" ToRole="categoriaIn" />
+    <NavigationProperty Name="tipo_medida" Relationship="bdpasteleliasModel.FK__insumo__idtipo_m__2B3F6F97" FromRole="insumo" ToRole="tipo_medida" />
+    <NavigationProperty Name="insumo_proveedor" Relationship="bdpasteleliasModel.FK__insumo_pr__idins__5CD6CB2B" FromRole="insumo" ToRole="insumo_proveedor" />
+    <NavigationProperty Name="producto" Relationship="bdpasteleliasModel.producto_insumo" FromRole="insumo" ToRole="producto" />
+  </EntityType>
+  <EntityType Name="insumo_proveedor">
+    <Key>
+      <PropertyRef Name="idProveedor" />
+      <PropertyRef Name="idinsumo" />
+    </Key>
+    <Property Name="idProveedor" Type="Int32" Nullable="false" />
+    <Property Name="idinsumo" Type="Int32" Nullable="false" />
+    <Property Name="precio" Type="Decimal" Precision="5" Scale="2" />
+    <NavigationProperty Name="insumo" Relationship="bdpasteleliasModel.FK__insumo_pr__idins__5CD6CB2B" FromRole="insumo_proveedor" ToRole="insumo" />
+    <NavigationProperty Name="Proveedor" Relationship="bdpasteleliasModel.FK__insumo_pr__idPro__5BE2A6F2" FromRole="insumo_proveedor" ToRole="Proveedor" />
+  </EntityType>
+  <EntityType Name="maquinaria">
+    <Key>
+      <PropertyRef Name="idmaquinaria" />
+    </Key>
+    <Property Name="idmaquinaria" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ordenProduccion" Relationship="bdpasteleliasModel.ordenPro_maqui" FromRole="maquinaria" ToRole="ordenProduccion" />
+  </EntityType>
+  <EntityType Name="opciones">
+    <Key>
+      <PropertyRef Name="idopciones" />
+    </Key>
+    <Property Name="idopciones" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <Property Name="menuPadre" Type="Int32" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__opciones__idesta__1B0907CE" FromRole="opciones" ToRole="estado" />
+    <NavigationProperty Name="rol" Relationship="bdpasteleliasModel.acceso" FromRole="opciones" ToRole="rol" />
+  </EntityType>
+  <EntityType Name="ordenProduccion">
+    <Key>
+      <PropertyRef Name="idordenProduccion" />
+    </Key>
+    <Property Name="idordenProduccion" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="idpedido" Type="Int32" Nullable="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="datosProduccion" Relationship="bdpasteleliasModel.FK__datosProd__idord__4D94879B" FromRole="ordenProduccion" ToRole="datosProduccion" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__ordenProd__idest__4BAC3F29" FromRole="ordenProduccion" ToRole="estado" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__ordenProd__idped__4AB81AF0" FromRole="ordenProduccion" ToRole="pedido" />
+    <NavigationProperty Name="maquinaria" Relationship="bdpasteleliasModel.ordenPro_maqui" FromRole="ordenProduccion" ToRole="maquinaria" />
+    <NavigationProperty Name="empleado" Relationship="bdpasteleliasModel.ordenProd_Empleado" FromRole="ordenProduccion" ToRole="empleado" />
+  </EntityType>
+  <EntityType Name="PAGO">
+    <Key>
+      <PropertyRef Name="idpago" />
+    </Key>
+    <Property Name="idpago" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="idpedido" Type="Int32" Nullable="false" />
+    <Property Name="documento" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__PAGO__idpedido__60A75C0F" FromRole="PAGO" ToRole="pedido" />
+  </EntityType>
+  <EntityType Name="pedido">
+    <Key>
+      <PropertyRef Name="idpedido" />
+    </Key>
+    <Property Name="idpedido" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="contacto_nom" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="contacto_ape" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="contacto_mail" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="contacto_fijo" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="contacto_movil" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="tipoentrega" Type="Int32" />
+    <Property Name="fechaPedido" Type="DateTime" Precision="3" />
+    <Property Name="fechaentrega" Type="DateTime" Precision="3" />
+    <Property Name="tcomprobante" Type="Int32" />
+    <Property Name="ruc" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="razonsocial" Type="String" MaxLength="75" Unicode="false" FixedLength="false" />
+    <Property Name="entrega_dir" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="entrega_urba" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="subTotal" Type="Decimal" Nullable="false" Precision="6" Scale="2" />
+    <Property Name="igv" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="totalpedido" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="notas" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="idCliente" Type="Int32" Nullable="false" />
+    <Property Name="iddistrito" Type="Int32" Nullable="false" />
+    <Property Name="idtipo_compPago" Type="Int32" Nullable="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <Property Name="idtipopago" Type="Int32" Nullable="false" />
+    <Property Name="entrega_ref" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Cliente" Relationship="bdpasteleliasModel.FK__pedido__idClient__3A81B327" FromRole="pedido" ToRole="Cliente" />
+    <NavigationProperty Name="distrito" Relationship="bdpasteleliasModel.FK__pedido__iddistri__3B75D760" FromRole="pedido" ToRole="distrito" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__pedido__idestado__3D5E1FD2" FromRole="pedido" ToRole="estado" />
+    <NavigationProperty Name="ordenProduccion" Relationship="bdpasteleliasModel.FK__ordenProd__idped__4AB81AF0" FromRole="pedido" ToRole="ordenProduccion" />
+    <NavigationProperty Name="PAGO" Relationship="bdpasteleliasModel.FK__PAGO__idpedido__60A75C0F" FromRole="pedido" ToRole="PAGO" />
+    <NavigationProperty Name="tipo_compPago" Relationship="bdpasteleliasModel.FK__pedido__idtipo_c__3C69FB99" FromRole="pedido" ToRole="tipo_compPago" />
+    <NavigationProperty Name="TIPO_PAGO" Relationship="bdpasteleliasModel.FK__pedido__idtipopa__3E52440B" FromRole="pedido" ToRole="TIPO_PAGO" />
+    <NavigationProperty Name="pedido_estados" Relationship="bdpasteleliasModel.FK__pedido_es__idped__45F365D3" FromRole="pedido" ToRole="pedido_estados" />
+    <NavigationProperty Name="pedido_productos" Relationship="bdpasteleliasModel.FK__pedido_pr__idped__412EB0B6" FromRole="pedido" ToRole="pedido_productos" />
+    <NavigationProperty Name="Seguimiento" Relationship="bdpasteleliasModel.FK__Seguimien__idped__04E4BC85" FromRole="pedido" ToRole="Seguimiento" />
+  </EntityType>
+  <EntityType Name="pedido_estados">
+    <Key>
+      <PropertyRef Name="idpedido" />
+      <PropertyRef Name="idestadoPed" />
+    </Key>
+    <Property Name="idpedido" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="idestadoPed" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="estadoPed" Relationship="bdpasteleliasModel.FK__pedido_es__idest__46E78A0C" FromRole="pedido_estados" ToRole="estadoPed" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido_es__idped__45F365D3" FromRole="pedido_estados" ToRole="pedido" />
+  </EntityType>
+  <EntityType Name="pedido_productos">
+    <Key>
+      <PropertyRef Name="idpedido_productos" />
+    </Key>
+    <Property Name="idpedido_productos" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="precio" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="total" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="idpedido" Type="Int32" Nullable="false" />
+    <Property Name="idproducto" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido_pr__idped__412EB0B6" FromRole="pedido_productos" ToRole="pedido" />
+    <NavigationProperty Name="producto" Relationship="bdpasteleliasModel.FK__pedido_pr__idpro__4222D4EF" FromRole="pedido_productos" ToRole="producto" />
+  </EntityType>
+  <EntityType Name="producto">
+    <Key>
+      <PropertyRef Name="idproducto" />
+    </Key>
+    <Property Name="idproducto" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nomProducto" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="descProd" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="precio" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="nomFoto" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <Property Name="idcategoriaProd" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Carrito" Relationship="bdpasteleliasModel.FK__Carrito__idprodu__6383C8BA" FromRole="producto" ToRole="Carrito" />
+    <NavigationProperty Name="categoriaProd" Relationship="bdpasteleliasModel.FK__producto__idcate__24927208" FromRole="producto" ToRole="categoriaProd" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__producto__idesta__239E4DCF" FromRole="producto" ToRole="estado" />
+    <NavigationProperty Name="pedido_productos" Relationship="bdpasteleliasModel.FK__pedido_pr__idpro__4222D4EF" FromRole="producto" ToRole="pedido_productos" />
+    <NavigationProperty Name="insumo" Relationship="bdpasteleliasModel.producto_insumo" FromRole="producto" ToRole="insumo" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="idProveedor" />
+    </Key>
+    <Property Name="idProveedor" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nomProveedor" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="numero" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="insumo_proveedor" Relationship="bdpasteleliasModel.FK__insumo_pr__idPro__5BE2A6F2" FromRole="Proveedor" ToRole="insumo_proveedor" />
+  </EntityType>
+  <EntityType Name="rol">
+    <Key>
+      <PropertyRef Name="idrol" />
+    </Key>
+    <Property Name="idrol" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Cliente" Relationship="bdpasteleliasModel.FK__Cliente__idrol__34C8D9D1" FromRole="rol" ToRole="Cliente" />
+    <NavigationProperty Name="empleado" Relationship="bdpasteleliasModel.FK__empleado__idrol__173876EA" FromRole="rol" ToRole="empleado" />
+    <NavigationProperty Name="opciones" Relationship="bdpasteleliasModel.acceso" FromRole="rol" ToRole="opciones" />
+  </EntityType>
+  <EntityType Name="Seguimiento">
+    <Key>
+      <PropertyRef Name="idSeguimiento" />
+      <PropertyRef Name="idpedido" />
+      <PropertyRef Name="idestado" />
+      <PropertyRef Name="fechacambio" />
+      <PropertyRef Name="idempleado" />
+      <PropertyRef Name="idCliente" />
+    </Key>
+    <Property Name="idSeguimiento" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="idpedido" Type="Int32" Nullable="false" />
+    <Property Name="idestado" Type="Int32" Nullable="false" />
+    <Property Name="fechacambio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idempleado" Type="Int32" Nullable="false" />
+    <Property Name="idCliente" Type="Int32" Nullable="false" />
+    <Property Name="notas" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Cliente" Relationship="bdpasteleliasModel.FK__Seguimien__idCli__07C12930" FromRole="Seguimiento" ToRole="Cliente" />
+    <NavigationProperty Name="empleado" Relationship="bdpasteleliasModel.FK__Seguimien__idemp__06CD04F7" FromRole="Seguimiento" ToRole="empleado" />
+    <NavigationProperty Name="estado" Relationship="bdpasteleliasModel.FK__Seguimien__idest__05D8E0BE" FromRole="Seguimiento" ToRole="estado" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__Seguimien__idped__04E4BC85" FromRole="Seguimiento" ToRole="pedido" />
+  </EntityType>
+  <EntityType Name="tipo_compPago">
+    <Key>
+      <PropertyRef Name="idtipo_compPago" />
+    </Key>
+    <Property Name="idtipo_compPago" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido__idtipo_c__3C69FB99" FromRole="tipo_compPago" ToRole="pedido" />
+  </EntityType>
+  <EntityType Name="tipo_medida">
+    <Key>
+      <PropertyRef Name="idtipo_medida" />
+    </Key>
+    <Property Name="idtipo_medida" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="insumo" Relationship="bdpasteleliasModel.FK__insumo__idtipo_m__2B3F6F97" FromRole="tipo_medida" ToRole="insumo" />
+  </EntityType>
+  <EntityType Name="TIPO_PAGO">
+    <Key>
+      <PropertyRef Name="idtipopago" />
+    </Key>
+    <Property Name="idtipopago" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descrip" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="pedido" Relationship="bdpasteleliasModel.FK__pedido__idtipopa__3E52440B" FromRole="TIPO_PAGO" ToRole="pedido" />
+  </EntityType>
+  <Association Name="FK__Carrito__idprodu__6383C8BA">
+    <End Role="producto" Type="bdpasteleliasModel.producto" Multiplicity="1" />
+    <End Role="Carrito" Type="bdpasteleliasModel.Carrito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="idproducto" />
+      </Principal>
+      <Dependent Role="Carrito">
+        <PropertyRef Name="idproducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insumo__idcatego__2C3393D0">
+    <End Role="categoriaIn" Type="bdpasteleliasModel.categoriaIn" Multiplicity="1" />
+    <End Role="insumo" Type="bdpasteleliasModel.insumo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categoriaIn">
+        <PropertyRef Name="idcategoriaIn" />
+      </Principal>
+      <Dependent Role="insumo">
+        <PropertyRef Name="idcategoriaIn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__producto__idcate__24927208">
+    <End Role="categoriaProd" Type="bdpasteleliasModel.categoriaProd" Multiplicity="1" />
+    <End Role="producto" Type="bdpasteleliasModel.producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categoriaProd">
+        <PropertyRef Name="idcategoriaProd" />
+      </Principal>
+      <Dependent Role="producto">
+        <PropertyRef Name="idcategoriaProd" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cliente__idestad__35BCFE0A">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="Cliente" Type="bdpasteleliasModel.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cliente__idrol__34C8D9D1">
+    <End Role="rol" Type="bdpasteleliasModel.rol" Multiplicity="1" />
+    <End Role="Cliente" Type="bdpasteleliasModel.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rol">
+        <PropertyRef Name="idrol" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="idrol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido__idClient__3A81B327">
+    <End Role="Cliente" Type="bdpasteleliasModel.Cliente" Multiplicity="1" />
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="pedido">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seguimien__idCli__07C12930">
+    <End Role="Cliente" Type="bdpasteleliasModel.Cliente" Multiplicity="1" />
+    <End Role="Seguimiento" Type="bdpasteleliasModel.Seguimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Seguimiento">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__datosProd__idord__4D94879B">
+    <End Role="ordenProduccion" Type="bdpasteleliasModel.ordenProduccion" Multiplicity="1" />
+    <End Role="datosProduccion" Type="bdpasteleliasModel.datosProduccion" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ordenProduccion">
+        <PropertyRef Name="idordenProduccion" />
+      </Principal>
+      <Dependent Role="datosProduccion">
+        <PropertyRef Name="idordenProduccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__empleado__iddist__182C9B23">
+    <End Role="distrito" Type="bdpasteleliasModel.distrito" Multiplicity="1" />
+    <End Role="empleado" Type="bdpasteleliasModel.empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="distrito">
+        <PropertyRef Name="iddistrito" />
+      </Principal>
+      <Dependent Role="empleado">
+        <PropertyRef Name="iddistrito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido__iddistri__3B75D760">
+    <End Role="distrito" Type="bdpasteleliasModel.distrito" Multiplicity="1" />
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="distrito">
+        <PropertyRef Name="iddistrito" />
+      </Principal>
+      <Dependent Role="pedido">
+        <PropertyRef Name="iddistrito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__empleado__idesta__164452B1">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="empleado" Type="bdpasteleliasModel.empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="empleado">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__empleado__idrol__173876EA">
+    <End Role="rol" Type="bdpasteleliasModel.rol" Multiplicity="1" />
+    <End Role="empleado" Type="bdpasteleliasModel.empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rol">
+        <PropertyRef Name="idrol" />
+      </Principal>
+      <Dependent Role="empleado">
+        <PropertyRef Name="idrol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seguimien__idemp__06CD04F7">
+    <End Role="empleado" Type="bdpasteleliasModel.empleado" Multiplicity="1" />
+    <End Role="Seguimiento" Type="bdpasteleliasModel.Seguimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empleado">
+        <PropertyRef Name="idempleado" />
+      </Principal>
+      <Dependent Role="Seguimiento">
+        <PropertyRef Name="idempleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__opciones__idesta__1B0907CE">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="opciones" Type="bdpasteleliasModel.opciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="opciones">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenProd__idest__4BAC3F29">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="ordenProduccion" Type="bdpasteleliasModel.ordenProduccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="ordenProduccion">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido__idestado__3D5E1FD2">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="pedido">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__producto__idesta__239E4DCF">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="producto" Type="bdpasteleliasModel.producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="producto">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seguimien__idest__05D8E0BE">
+    <End Role="estado" Type="bdpasteleliasModel.estado" Multiplicity="1" />
+    <End Role="Seguimiento" Type="bdpasteleliasModel.Seguimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="Seguimiento">
+        <PropertyRef Name="idestado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido_es__idest__46E78A0C">
+    <End Role="estadoPed" Type="bdpasteleliasModel.estadoPed" Multiplicity="1" />
+    <End Role="pedido_estados" Type="bdpasteleliasModel.pedido_estados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estadoPed">
+        <PropertyRef Name="idestadoPed" />
+      </Principal>
+      <Dependent Role="pedido_estados">
+        <PropertyRef Name="idestadoPed" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insumo__idtipo_m__2B3F6F97">
+    <End Role="tipo_medida" Type="bdpasteleliasModel.tipo_medida" Multiplicity="1" />
+    <End Role="insumo" Type="bdpasteleliasModel.insumo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_medida">
+        <PropertyRef Name="idtipo_medida" />
+      </Principal>
+      <Dependent Role="insumo">
+        <PropertyRef Name="idtipo_medida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insumo_pr__idins__5CD6CB2B">
+    <End Role="insumo" Type="bdpasteleliasModel.insumo" Multiplicity="1" />
+    <End Role="insumo_proveedor" Type="bdpasteleliasModel.insumo_proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="insumo">
+        <PropertyRef Name="idinsumo" />
+      </Principal>
+      <Dependent Role="insumo_proveedor">
+        <PropertyRef Name="idinsumo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__insumo_pr__idPro__5BE2A6F2">
+    <End Role="Proveedor" Type="bdpasteleliasModel.Proveedor" Multiplicity="1" />
+    <End Role="insumo_proveedor" Type="bdpasteleliasModel.insumo_proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="idProveedor" />
+      </Principal>
+      <Dependent Role="insumo_proveedor">
+        <PropertyRef Name="idProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ordenProd__idped__4AB81AF0">
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="1" />
+    <End Role="ordenProduccion" Type="bdpasteleliasModel.ordenProduccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedido">
+        <PropertyRef Name="idpedido" />
+      </Principal>
+      <Dependent Role="ordenProduccion">
+        <PropertyRef Name="idpedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PAGO__idpedido__60A75C0F">
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="1" />
+    <End Role="PAGO" Type="bdpasteleliasModel.PAGO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedido">
+        <PropertyRef Name="idpedido" />
+      </Principal>
+      <Dependent Role="PAGO">
+        <PropertyRef Name="idpedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido__idtipo_c__3C69FB99">
+    <End Role="tipo_compPago" Type="bdpasteleliasModel.tipo_compPago" Multiplicity="1" />
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_compPago">
+        <PropertyRef Name="idtipo_compPago" />
+      </Principal>
+      <Dependent Role="pedido">
+        <PropertyRef Name="idtipo_compPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido__idtipopa__3E52440B">
+    <End Role="TIPO_PAGO" Type="bdpasteleliasModel.TIPO_PAGO" Multiplicity="1" />
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_PAGO">
+        <PropertyRef Name="idtipopago" />
+      </Principal>
+      <Dependent Role="pedido">
+        <PropertyRef Name="idtipopago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido_es__idped__45F365D3">
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="1" />
+    <End Role="pedido_estados" Type="bdpasteleliasModel.pedido_estados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedido">
+        <PropertyRef Name="idpedido" />
+      </Principal>
+      <Dependent Role="pedido_estados">
+        <PropertyRef Name="idpedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido_pr__idped__412EB0B6">
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="1" />
+    <End Role="pedido_productos" Type="bdpasteleliasModel.pedido_productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedido">
+        <PropertyRef Name="idpedido" />
+      </Principal>
+      <Dependent Role="pedido_productos">
+        <PropertyRef Name="idpedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seguimien__idped__04E4BC85">
+    <End Role="pedido" Type="bdpasteleliasModel.pedido" Multiplicity="1" />
+    <End Role="Seguimiento" Type="bdpasteleliasModel.Seguimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedido">
+        <PropertyRef Name="idpedido" />
+      </Principal>
+      <Dependent Role="Seguimiento">
+        <PropertyRef Name="idpedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__pedido_pr__idpro__4222D4EF">
+    <End Role="producto" Type="bdpasteleliasModel.producto" Multiplicity="1" />
+    <End Role="pedido_productos" Type="bdpasteleliasModel.pedido_productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="idproducto" />
+      </Principal>
+      <Dependent Role="pedido_productos">
+        <PropertyRef Name="idproducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="acceso">
+    <End Role="opciones" Type="bdpasteleliasModel.opciones" Multiplicity="*" />
+    <End Role="rol" Type="bdpasteleliasModel.rol" Multiplicity="*" />
+  </Association>
+  <Association Name="ordenPro_maqui">
+    <End Role="maquinaria" Type="bdpasteleliasModel.maquinaria" Multiplicity="*" />
+    <End Role="ordenProduccion" Type="bdpasteleliasModel.ordenProduccion" Multiplicity="*" />
+  </Association>
+  <Association Name="ordenProd_Empleado">
+    <End Role="empleado" Type="bdpasteleliasModel.empleado" Multiplicity="*" />
+    <End Role="ordenProduccion" Type="bdpasteleliasModel.ordenProduccion" Multiplicity="*" />
+  </Association>
+  <Association Name="producto_insumo">
+    <End Role="insumo" Type="bdpasteleliasModel.insumo" Multiplicity="*" />
+    <End Role="producto" Type="bdpasteleliasModel.producto" Multiplicity="*" />
+  </Association>
+</Schema>

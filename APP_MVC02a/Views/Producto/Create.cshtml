@@ -1,0 +1,92 @@
+﻿@model APP_MVC02a.Models.producto
+
+@{
+    ViewBag.Title = "Nuevo Producto";
+}
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- Ionicons -->
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<!-- Theme style -->
+<link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<!-- DATA TABES SCRIPT -->
+        <script src="js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+	<!-- AdminLTE App -->
+	<script src="js/AdminLTE/app.js" type="text/javascript"></script>
+
+<h2>Nuevo Producto</h2>
+
+@using (Html.BeginForm("create", "Producto", FormMethod.Post , new {   enctype="multipart/form-data"})) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+       
+        <div class="editor-label">
+            Nombre
+        </div>
+
+           <div class="editor-field">
+            @Html.EditorFor(model => model.nomProducto, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.nomProducto)
+            
+            </div>
+
+        <div class="editor-label">
+            Descripcion
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.descProd)
+            @Html.ValidationMessageFor(model => model.descProd)
+        </div>
+
+        <div class="editor-label">
+            Precio
+        </div>
+        <div class="editor-field">
+            <input type="text" name="precio" id="precio" />
+        </div>
+
+        <div class="editor-label">
+            Imagen de Producto:
+        </div>
+        <div class="editor-field">
+           @*   @Html.TextBox("file", "", new { type = "file" }) *@
+                <input type="file" name="archivo" />
+        </div>
+
+        <div class="editor-label" style="display:none;">
+           Estado
+        </div>
+        <div class="editor-field" style="display:none;">
+             @*@Html.DropDownList("idestado", String.Empty)
+            @Html.ValidationMessageFor(model => model.idestado) *@
+            <input name="idestado" id="idestado" value="1" type="hidden" />
+        </div>
+
+        <div class="editor-label">
+            Categoria
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idcategoriaProd", String.Empty)
+            @Html.ValidationMessageFor(model => model.idcategoriaProd)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

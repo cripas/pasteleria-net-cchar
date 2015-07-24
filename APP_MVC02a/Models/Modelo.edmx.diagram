@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7cbbbe2088e04de6a5b9e06b7d2b79a8" Name="Diagrama1">
+        <EntityTypeShape EntityType="bdpasteleliasModel.Carrito" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.categoriaIn" Width="1.5" PointX="1.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.categoriaProd" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.Cliente" Width="1.5" PointX="7.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.datosProduccion" Width="1.5" PointX="17.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.distrito" Width="1.5" PointX="10.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.empleado" Width="1.5" PointX="10.5" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.estado" Width="1.5" PointX="0.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.estadoPed" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.insumo" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.insumo_proveedor" Width="1.5" PointX="3" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.maquinaria" Width="1.5" PointX="12.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.opciones" Width="1.5" PointX="3" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.ordenProduccion" Width="1.5" PointX="15" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.PAGO" Width="1.5" PointX="15" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.pedido" Width="1.5" PointX="12.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.pedido_estados" Width="1.5" PointX="15" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.pedido_productos" Width="1.5" PointX="18" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.producto" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.Proveedor" Width="1.5" PointX="0.75" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.rol" Width="1.5" PointX="5.25" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.Seguimiento" Width="1.5" PointX="18" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.tipo_compPago" Width="1.5" PointX="10.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.tipo_medida" Width="1.5" PointX="1.5" PointY="28.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bdpasteleliasModel.TIPO_PAGO" Width="1.5" PointX="10.5" PointY="24.125" IsExpanded="true" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Carrito__idprodu__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__insumo__idcatego__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__producto__idcate__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Cliente__idestad__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Cliente__idrol__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido__idClient__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Seguimien__idCli__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__datosProd__idord__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__empleado__iddist__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido__iddistri__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__empleado__idesta__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__empleado__idrol__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Seguimien__idemp__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__opciones__idesta__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__ordenProd__idest__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido__idestado__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__producto__idesta__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Seguimien__idest__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido_es__idest__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__insumo__idtipo_m__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__insumo_pr__idins__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__insumo_pr__idPro__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__ordenProd__idped__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__PAGO__idpedido__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido__idtipo_c__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido__idtipopa__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido_es__idped__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido_pr__idped__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__Seguimien__idped__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.FK__pedido_pr__idpro__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.acceso" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.ordenPro_maqui" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.ordenProd_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="bdpasteleliasModel.producto_insumo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

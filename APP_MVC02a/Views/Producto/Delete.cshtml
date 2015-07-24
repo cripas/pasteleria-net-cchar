@@ -1,0 +1,60 @@
+﻿@model APP_MVC02a.Models.producto
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Estas seguro que quieres eliminar este Producto?</h3>
+<fieldset>
+    <legend>producto</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nomProducto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nomProducto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descProd)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descProd)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.precio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.precio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nomFoto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nomFoto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.categoriaProd.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.categoriaProd.descrip)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink(" Regresar a la Lista", "Index")
+    </p>
+}

@@ -1,0 +1,396 @@
+﻿@model APP_MVC02a.Models.producto
+
+@{
+    ViewBag.Title =Model.nomProducto + "| Pasteleria San Elias";
+   
+}
+
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix" style="display:none;">
+	<a class="home" href="http://tiendapasteleria.esy.es/prestashop/" title="Volver a Inicio"><i class="icon-home"></i></a>
+			<span class="navigation-pipe">&gt;</span>
+					<span class="navigation_page"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://tiendapasteleria.esy.es/prestashop/3-mujer" title="Mujer"><span itemprop="title">Mujer</span></a></span><span class="navigation-pipe">&gt;</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://tiendapasteleria.esy.es/prestashop/4-tops" title="Tops"><span itemprop="title">Tops</span></a></span><span class="navigation-pipe">&gt;</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://tiendapasteleria.esy.es/prestashop/7-blusas" title="Blusas"><span itemprop="title">Blusas</span></a></span><span class="navigation-pipe">&gt;</span>Blusa</span>
+			</div>
+<!-- /Breadcrumb -->
+ 
+										<div id="slider_row" class="row" >
+						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+					</div>
+					<div class="row" style="background-color: #FFF">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+							<div itemscope="" itemtype="http://schema.org/Product">
+	<div class="primary_block row">
+					<div class="container">
+				<div class="top-hr"></div>
+			</div>
+								<!-- left infos-->
+		<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
+			<!-- product img-->
+			<div id="image-block" class="clearfix">
+																	<span id="view_full_size">
+													<img id="bigpic" itemprop="image" src="~/imagenes/productosimg/@Model.nomFoto" title="Blusa" alt="Blusa" width="458" height="458">
+															<span class="span_link no-print">Ver más grande</span>
+																		</span>
+							</div> <!-- end image-block -->
+							<!-- thumbnails -->
+				<div id="views_block" class="clearfix ">
+											<span class="view_scroll_spacer">
+							<a id="view_scroll_left" class="" title="Otras vistas" href="javascript:{}" style="cursor: default; opacity: 0;">
+								Previo
+							</a>
+						</span>
+										<div id="thumbs_list">
+						<ul id="thumbs_list_frame" style="width: 294px;">
+								
+						<li id="thumbnail_7" class="last">
+									<a href="~/imagenes/productosimg/@Model.nomFoto" />" data-fancybox-group="other-views" class="fancybox shown" title="Blusa">
+										<img class="img-responsive" id="thumb_7" src='~/imagenes/productosimg/@Model.nomFoto' alt="Blusa" title="Blusa" height="80" width="80" itemprop="image">
+									</a>
+						</li>
+																			</ul>
+					</div> <!-- end thumbs_list -->
+											<a id="view_scroll_right" title="Otras vistas" href="javascript:{}" style="cursor: default; opacity: 0; display: none;">
+							Siguiente
+						</a>
+									</div> <!-- end views-block -->
+				<!-- end thumbnails -->
+										<p class="resetimg clear no-print">
+					<span id="wrapResetImages" style="display: none;">
+						<a href="./ourstore_files/ourstore.html" data-id="resetImages">
+							<i class="icon-repeat"></i>
+							Mostrar todas las imÃ¡genes
+						</a>
+					</span>
+				</p>
+					</div> <!-- end pb-left-column -->
+		<!-- end left infos-->
+		<!-- center infos -->
+		<div class="pb-center-column col-xs-12 col-sm-4">
+						<h1 itemprop="name">@Model.nomProducto</h1>
+			<p id="product_reference">
+				<label>Descripcion: </label>
+				
+			</p>
+						
+										<div id="short_description_block">
+											<div id="short_description_content" class="rte align_justify" itemprop="description"><p>@Model.descProd</p></div>
+					
+											<p class="buttons_bottom_block">
+							<a href="javascript:{}" class="button">
+								Mas detalles
+							</a>
+						</p>
+										<!---->
+				</div> <!-- end short_description_block -->
+										<!-- number of item in stock -->
+			
+						<!-- availability or doesntExist -->
+			<p id="availability_statut">
+				
+				<span id="availability_value" class="label label-success">En stock</span>
+			</p>
+							
+				<p class="warning_inline" id="last_quantities" style="display: none;">Advertencia: Â¡Ãltimos artÃ­culos en inventario!</p>
+						<p id="availability_date" style="display: none;">
+				<span id="availability_date_label">Disponible el: </span>
+				<span id="availability_date_value"></span>
+			</p>
+			<!-- Out of stock hook -->
+			<div id="oosHook" style="display: none;">
+				
+			</div>
+				<p class="socialsharing_product list-inline no-print">
+					<button data-type="twitter" type="button" class="btn btn-default btn-twitter social-sharing">
+				<i class="icon-twitter"></i> Tweet
+				<!-- <img src="http://tiendapasteleria.esy.es/prestashop/modules/socialsharing/img/twitter.gif" alt="Tweet" /> -->
+			</button>
+							<button data-type="facebook" type="button" class="btn btn-default btn-facebook social-sharing">
+				<i class="icon-facebook"></i> Compartir
+				<!-- <img src="http://tiendapasteleria.esy.es/prestashop/modules/socialsharing/img/facebook.gif" alt="Facebook Like" /> -->
+			</button>
+							<button data-type="google-plus" type="button" class="btn btn-default btn-google-plus social-sharing">
+				<i class="icon-google-plus"></i> Google+
+				<!-- <img src="http://tiendapasteleria.esy.es/prestashop/modules/socialsharing/img/google.gif" alt="Google Plus" /> -->
+			</button>
+							<button data-type="pinterest" type="button" class="btn btn-default btn-pinterest social-sharing">
+				<i class="icon-pinterest"></i> Pinterest
+				<!-- <img src="http://tiendapasteleria.esy.es/prestashop/modules/socialsharing/img/pinterest.gif" alt="Pinterest" /> -->
+			</button>
+			</p>
+ 
+<!--  /Module ProductComments -->
+							<!-- usefull links-->
+				<ul id="usefull_link_block" class="clearfix no-print">
+					<li class="sendtofriend">
+	
+	<div style="display: none;">
+		<div id="send_friend_form">
+			
+			<div class="row">
+				<div class="product clearfix col-xs-12 col-sm-6">
+					<img src="./ourstore_files/blusa(4).jpg" height="250" width="250" alt="Blusa">
+					<div class="product_desc">
+						<p class="product_name">
+							<strong>Blusa</strong>
+						</p>
+						<p>Blusa de manga corta con detalle drapeado muy femenino en la manga.</p>
+					</div>
+				</div><!-- .product -->
+				<div class="send_friend_form_content col-xs-12 col-sm-6" id="send_friend_form_content">
+					<div id="send_friend_form_error"></div>
+					<div id="send_friend_form_success"></div>
+					<div class="form_container">
+						<p class="intro_form">
+							Recipiente :
+						</p>
+						<p class="text">
+							<label for="friend_name">
+								Nombre de tu amigo <sup class="required">*</sup> :
+							</label>
+							<input id="friend_name" name="friend_name" type="text" value="">
+						</p>
+						<p class="text">
+							<label for="friend_email">
+								E-mail&nbsp;de tu amigo <sup class="required">*</sup> :
+							</label>
+							<input id="friend_email" name="friend_email" type="text" value="">
+						</p>
+						<p class="txt_required">
+							<sup class="required">*</sup> Campos obligatorios
+						</p>
+					</div>
+					<p class="submit">
+						<button id="sendEmail" class="btn button button-small" name="sendEmail" type="submit">
+							<span>Enviar</span>
+						</button>&nbsp;
+						total&nbsp;
+						<a class="closefb" href="http://tiendapasteleria.esy.es/prestashop/blusas/2-blusa.html#">
+							Cancelar
+						</a>
+					</p>
+				</div> <!-- .send_friend_form_content -->
+			</div>
+		</div>
+	</div>
+</li>
+
+
+
+
+
+					<li class="print">
+						<a href="javascript:print();">
+							Imprimir
+						</a>
+					</li>
+									</ul>
+					</div>
+					
+		<!-- end center infos-->
+		<!-- pb-right-column-->
+		<div class="pb-right-column col-xs-12 col-sm-4 col-md-3">
+						<!-- add to cart form-->
+	<!--<s:form id="frmContenido" action="AAgregaCarro">-->
+			
+				<p class="hidden">
+					<!--<input type="hidden" id="txtidProducto" value="<s:property value="productobean.idproducto" />">
+					<input type="hidden" id="txtnomProducto" value="<s:property value="productobean.nomProducto" />">
+					<input type="hidden" id="txtnomFoto" value="<s:property value="productobean.nomFoto" />">
+					<input type="hidden" id="txtPrecio" value="<s:property value="productobean.precio"/>">-->
+				</p>
+				<div class="box-info-product">
+					<div class="content_prices clearfix">
+													<!-- prices -->
+							<div>
+								<p class="our_price_display" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer"><link itemprop="availability" href="http://schema.org/InStock"><span id="our_price_display" class="price" itemprop="price">
+				Precio: S/. @Model.precio
+				</span><meta itemprop="priceCurrency" content="PEN"></p>
+				
+								<p id="reduction_percent" style="display: none;"><span id="reduction_percent_display"></span></p>
+								<p id="reduction_amount" style="display: none;"><span id="reduction_amount_display"></span></p>
+								<p id="old_price" class="hidden" style="display: none;"><span id="old_price_display" style="display: none;"></span></p>
+															</div> <!-- end prices -->
+																											 
+						
+						<div class="clear"></div>
+					</div> <!-- end content_prices -->
+					<div class="product_attributes clearfix">
+						<!-- quantity wanted -->
+												<p id="quantity_wanted_p">
+							<label>Cantidad</label>
+							<input type="text" name="qty" id="quantity_wanted" class="text" value="1" onkeypress="javascript:return solonumeros(event)">
+							<a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down">
+								<span><i class="icon-minus"></i></span>
+							</a>
+							<a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up">
+								<span><i class="icon-plus"></i></span>
+							</a>
+							<span class="clearfix"></span>
+						</p>
+												<!-- minimal quantity wanted -->
+						<p id="minimal_quantity_wanted_p" style="display: none;">
+							La cantidad mÃ­nima en el pedido de compra para el producto es <b id="minimal_quantity_label">1</b>
+						</p>
+													<!-- attributes -->
+							<div id="attributes">
+								<div class="clearfix"></div>
+								<div style="display: none;">
+																											<fieldset class="attribute_fieldset">
+											<label class="attribute_label" for="group_1">Size&nbsp;</label>
+																						<div class="attribute_list">
+																									<div class="selector" id="uniform-group_1" style="width: 228px;"><span style="width: 218px; -webkit-user-select: none;">S</span><select name="group_1" id="group_1" class="form-control attribute_select no-print">
+																													<option value="1" selected="selected" title="S">S</option>
+																													<option value="2" title="M">M</option>
+																													<option value="3" title="L">L</option>
+																											</select></div>
+																							</div> <!-- end attribute_list -->
+										</fieldset>
+																																				<fieldset class="attribute_fieldset">
+											<label class="attribute_label">Color&nbsp;</label>
+																						<div class="attribute_list">
+																									<ul id="color_to_pick_list" class="clearfix">
+																																																										<li>
+																<a href="./ourstore_files/ourstore.html" id="color_8" name="Blanco" class="color_pick" style="background:#ffffff;" title="Blanco">
+																																	</a>
+															</li>
+																																																											<li class="selected">
+																<a href="./ourstore_files/ourstore.html" id="color_11" name="Negro" class="color_pick selected" style="background:#434A54;" title="Negro">
+																																	</a>
+															</li>
+																																																																									</ul>
+													<input type="hidden" class="color_pick_hidden" name="group_3" value="11">
+																							</div> <!-- end attribute_list -->
+										</fieldset>
+											</div>													</div> <!-- end attributes -->
+											</div> <!-- end product_attributes -->
+					<div class="box-cart-bottom">
+						<div>
+							<p id="" class="buttons_bottom_block no-print">
+								<button id="btnagregaaCarro" type="button" name="Submit" class="exclusive">
+                                   
+									<span>Añadir al carrito</span>
+								</button>
+
+                                @*<a class="button aajax_add_to_cart_button btn btn-default" href="@Url.Action("AddToCart","CarritoCompras", new {id = @Model.idproducto})">
+        <span>Agregar al carrito</span>
+    </a>*@
+
+
+                                </p>
+                            </div>
+                          
+    <!-- /Productpaymentlogos module -->
+                        </div> <!-- end box-cart-bottom -->
+                    </div> <!-- end box-info-product -->
+
+                </s:form>
+               
+
+                        </div> <!-- end pb-right-column-->
+        </div> <!-- end primary_block -->
+                            <!-- Data sheet -->
+
+
+    <!-- Fancybox -->
+    <div style="display: none;">
+        <div id="new_comment_form">
+            <form id="id_new_comment_form" action="http://tiendapasteleria.esy.es/prestashop/blusas/2-blusa.html#">
+                <h2 class="page-subheading">
+                    Escribe tu opiniÃ³n
+                </h2>
+                <div class="row">
+                                        <div class="product clearfix  col-xs-12 col-sm-6">
+                            <img src="./ourstore_files/blusa(5).jpg" height="125" width="125" alt="Blusa">
+                            <div class="product_desc">
+                                <p class="product_name">
+                                    <strong>Blusa</strong>
+                                </p>
+                                <p>Blusa de manga corta con detalle drapeado muy femenino en la manga.</p>
+                            </div>
+                        </div>
+                                    <div class="new_comment_form_content col-xs-12 col-sm-6">
+                        <div id="new_comment_form_error" class="error" style="display: none; padding: 15px 25px">
+                            <ul></ul>
+                        </div>
+                                                <ul id="criterions_list">
+                                                        <li>
+                                    <label>Quality:</label>
+                                    <div class="star_content">
+                                        <input type="hidden" name="criterion[1]" value="3"><div class="cancel"><a title="Cancel Rating"></a></div><div class="star star_on"><a title="1">1</a></div>
+                                        <div class="star star_on"><a title="2">2</a></div>
+                                        <div class="star star_on"><a title="3">3</a></div>
+                                        <div class="star"><a title="4">4</a></div>
+                                        <div class="star"><a title="5">5</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                                                    </ul>
+                                            <label for="comment_title">
+                            TÃ­tulo: <sup class="required">*</sup>
+                        </label>
+                        <input id="comment_title" name="title" type="text" value="">
+                        <label for="content">
+                            Comentario: <sup class="required">*</sup>
+                        </label>
+                        <textarea id="content" name="content"></textarea>
+                                            <div id="new_comment_form_footer">
+                            <input id="id_product_comment_send" name="id_product" type="hidden" value="2">
+                            <p class="fl required"><sup>*</sup> Campos obligatorios</p>
+                            <p class="fr">
+                                <button id="submitNewMessage" name="submitMessage" type="submit" class="btn button button-small">
+                                    <span>Enviar</span>
+                                </button>&nbsp;
+                                total&nbsp;
+                                <a class="closefb" href="http://tiendapasteleria.esy.es/prestashop/blusas/2-blusa.html#">
+                                    Cancelar
+                                </a>
+                            </p>
+                            <div class="clearfix"></div>
+                        </div> <!-- #new_comment_form_footer -->
+                    </div>
+                </div>
+            </form><!-- /end new_comment_form_content -->
+        </div>
+    </div>
+    <!-- End fancybox -->
+
+            </section>
+            <!--end HOOK_PRODUCT_TAB -->
+                            <!-- description & features -->
+                                                </div> <!-- itemscope product wrapper -->
+
+                        </div><!-- #center_column -->
+                                            </div><!-- .row -->
+
+<script type="text/javascript">
+
+
+
+    $("#btnagregaaCarro").click(function () {
+        var cantidad = $("#quantity_wanted").val();
+        window.location.href = '/CarritoCompras/AddToCart?id=' +@Model.idproducto +'&cant=' + cantidad;
+    });
+
+    function solonumeros(e) {
+
+        var key;
+
+        if (window.event) // IE
+        {
+            key = e.keyCode;
+        }
+        else if (e.which) // Netscape/Firefox/Opera
+        {
+            key = e.which;
+        }
+
+        if (key < 48 || key > 57) {
+            return false;
+        }
+
+        return true;
+    }
+
+</script>

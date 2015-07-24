@@ -1,0 +1,285 @@
+﻿@model APP_MVC02a.Models.pedido
+@{
+    ViewBag.Title = "Pago";
+    Layout = "~/Views/Shared/_Tienda_Layout.cshtml";
+  //  var mipedido = @ViewData["miPedido"] as APP_MVC02a.Models.pedido;
+}
+
+<link href="~/css/estilosraadio.css" rel="stylesheet" />
+
+    <style>
+.efecto1{
+                -moz-box-shadow: 0 0px 5px #555555;
+                -webkit-box-shadow: 0 0px 5px #555555;
+                box-shadow: 0 0px 5px #555555;
+}
+</style>
+											
+<div style="background-color: #FFF;height:600px;" class="efecto1" >
+<div  style="background-color: #FFF;width: 1100px;margin-left: 35px;">
+											
+<!-- Breadcrumb -->
+
+<!-- /Breadcrumb -->
+
+										<div id="slider_row" class="row">
+						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+					</div>
+					<div class="row">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+<h1 id="cart_title" class="page-heading">Pago
+		
+	</h1>
+
+
+
+
+
+
+<!-- Steps -->
+<ul class="step clearfix" id="order_step">
+	<li class="step_todo  first">
+					<span><em>01.</em> Resumen</span>
+			</li>
+	<li class="step_todo second">
+					<span><em>02.</em> Iniciar sesión</span>
+			</li>
+	<li class="step_todo third">
+					<span><em>03.</em> Pedido</span>
+			</li>
+    <li class="step_current four">
+					<span><em>04.</em> Pago</span>
+			</li>
+	<li class="step_todo four">
+					<span><em>05.</em> Completo</span>
+			</li>
+
+</ul>
+<!-- /Steps -->
+<form action="#" >
+  <!--   <ul class="payment-methods">
+  <li class="payment-method paypal">
+    <input name="payment_methods" type="radio" id="paypal">
+    <label for="paypal">PayPal</label>
+  </li>
+
+  <li class="payment-method pagseguro">
+    <input name="payment_methods" type="radio" id="pagseguro">
+    <label for="pagseguro">PagSeguro</label>
+  </li>
+
+  <li class="payment-method bankslip">
+    <input name="payment_methods" type="radio" id="bankslip">
+    <label for="bankslip">Boleto</label>
+  </li>
+</ul>-->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" id="panel1">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="cambiaidPago(1)" >
+         Tarjeta de Credito Visa o Mastercard
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+    <div class="col-md-6">
+        <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Nombre</label>
+				  
+                        <input value="" type="text" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+   
+          
+        <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Apellido</label>
+				  
+                        <input value="" type="text" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+        <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Numero de Tarjeta</label>
+				  
+                        <input value="" type="text" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+   
+          
+        <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Codigo de Seguridad</label>
+				  
+                        <input value="" type="text" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+        <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Mes</label>
+				  
+                        <input value="" type="text" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+   
+          
+        <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Año</label>
+				  
+                        <input value="" type="text" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+     </div>
+          <div class="col-md-6">
+              <img alt="imagen" height="180" width="200" src="http://i.imgur.com/NKOfsov.jpg" />
+     </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" id="panel2">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="cambiaidPago(2)">
+          AGENCIA BCP
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+          <div class="col-md-8">
+       <div class="payment-method-description" style="display: block;">
+        <!--[CDATA[agenciabcp_payment_text]]--><h4><b>Puedes pagar de tres maneras:</b></h4>
+<ul>
+    <li>* Pagos en Agentes BCP (hasta S/.800): Indica referencia 07154 y tu número de pedido.</li>
+	<li>* Pagos en Ventanilla: Indica pago a la cuenta recaudadora de Linio Perú SAC y tu número de pedido</li>
+	<li>* En tu cuenta online en viabcp.com: Ingresa a la opción "Pago de servicios" y buscar a "Linio Perú SAC"</li>
+</ul>
+<p>Tienes hasta <b>48 horas</b> para pagar, de lo contrario tu pedido será cancelado.<br></p>
+<!-- <p style="color:#FF0000"><b>Le recordamos que:
+  </b></p><ul><li><b>Los días 2, 3 y 5 de abril no se podrán recibir pagos realizados. 
+
+</b></li><b>
+    <li>El sábado 4 de abril se aceptarán pagos realizados hasta el mediodía.</li></b><p></p>   
+
+ </ul> -->    </div>
+               </div>
+          <div class="col-md-4">
+
+              <img alt="imagen" height="140" width="300" src="http://s3-eu-west-1.amazonaws.com/rankia/images/valoraciones/0015/2370/BCP.GIF?1399451513">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default" id="panel3">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" onclick="cambiaidPago(3)">
+          AGENCIA BBVA
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+       
+           <div class="col-md-8">
+
+            <div class="payment-method-description" style="display: block;">
+        <p></p><h4><b>BBVA Banco Continental</b></h4>
+<p>Puedes pagar tu pedido de cuatro maneras:</p>
+			<ul>
+			<li>* Ventanilla del Banco Continental BBVA</li>
+			<li>* Agente Express del BBVA hasta S/. 1,900</li>
+			<li>* Banca por Internet hasta S/. 3,500. Ingresa a la opción "Pago de Servicios" y busca Linio M.N.</li>
+			</ul>
+			<p>Debes indicar que realizarás el pago a la Cuenta Recaudadora de Linio Perú SAC (convenio 1602) e indicar tu número de pedido.</p>
+<!-- <p style="color:#FF0000"><b>Le recordamos que:
+  </b></p><ul><li><b>Los días 2, 3 y 5 de abril no se podrán recibir pagos realizados. 
+
+</b></li><b>
+    <li>El sábado 4 de abril se aceptarán pagos realizados hasta el mediodía.</li></b><p></p>   
+
+ </ul> -->
+<p></p>
+    </div>
+          </div>
+           <div class="col-md-4">
+
+              <img alt="imagen" height="140" width="300" src="http://i.imgur.com/uCMc2d5.jpg">
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+  <div id="formularioPedido" style="display:block;">
+    <form action="Pago" method="post">
+        <input type="hidden" value="@Model.contacto_nom" id="contacto_nom" name="contacto_nom" />
+        <input type="hidden" value="@Model.contacto_ape" id="contacto_ape" name="contacto_ape" />
+        <input type="hidden" value="@Model.contacto_mail" id="contacto_mail" name="contacto_mail" />
+        <input type="hidden" value="@Model.contacto_movil" id="contacto_movil" name="contacto_movil" />
+        <input type="hidden" value="@Model.idtipo_compPago" id="idtipo_compPago" name="idtipo_compPago" />
+        <input type="hidden" value="@Model.fechaentrega" id="fechaentrega" name="fechaentrega" />
+
+        <input type="hidden" value="@Model.ruc" id="ruc" name="ruc" />
+        <input type="hidden" value="@Model.razonsocial" id="razonsocial" name="razonsocial" />
+        <input type="hidden" value="@Model.entrega_dir" id="entrega_dir" name="entrega_dir" />
+        <input type="hidden" value="@Model.entrega_urba" id="entrega_urba" name="entrega_urba" />
+        <input type="hidden" value="@Model.iddistrito" id="iddistrito" name="iddistrito" />
+
+        <input type="hidden" value="@Model.entrega_ref" id="entrega_ref" name="entrega_ref" />
+        <input type="hidden" value="" id="idtipopago" name="idtipopago" />
+        <input type="hidden" value="@Model.notas" id="notas" name="notas" />
+        <input type="hidden" value="@Model.idestado" id="idestado" name="idestado" />
+        <input type="hidden" value="@Model.idCliente" id="idCliente" name="idCliente" />
+
+        <input type="hidden" value="@Model.fechaPedido" id="fechaPedido" name="fechaPedido" />
+
+          <div class="submit clearfix">
+            <div class="col-md-12">	
+				<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium">
+				<span>Pagar<i class="icon-chevron-right right"></i></span>
+			</button>
+			
+		</div>
+            </div>
+
+    </form>
+
+</div>
+	
+					</div><!-- #center_column -->
+										</div><!-- .row -->
+				
+</div></div>
+
+
+<div id="txtidTipoPago" style="display:none;">1</div>
+
+<script>
+    function cambiaidPago(id) {
+        $("#txtidTipoPago").text(id);
+        $("#idtipopago").val(id);
+    }
+
+</script>

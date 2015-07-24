@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "NClientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>NClientes</h2>
+<form action="NClientes1" method="post" target="iFraverReporte">
+    <fieldset>
+        <table>
+            <tr>
+                <td>
+                    Números de Mejores Clientes:
+                    <select name="numTop" id="numTop">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fecha de Reporte
+                    <input name="startDate" id="startDate" class="date-picker" />
+                </td>
+
+            </tr>
+        </table>
+        <input type="submit" value="Consultar" />
+    </fieldset>
+</form>
+
+<iframe id="iFraverReporte" name="iFraverReporte" width="1000" height="450"></iframe>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<style type="text/css">
+    .ui-datepicker-calendar {
+        display: none;
+    }
+</style>
+
+<script>
+    $(function () {
+        $('.date-picker').datepicker(
+                       {
+                           dateFormat: "mm/yy",
+                           changeMonth: true,
+                           changeYear: true,
+                           showButtonPanel: true,
+                           onClose: function (dateText, inst) {
+
+
+                               function isDonePressed() {
+                                   return ($('#ui-datepicker-div').html().indexOf('ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all ui-state-hover') > -1);
+                               }
+
+                               if (isDonePressed()) {
+                                   var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                                   var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                                   $(this).datepicker('setDate', new Date(year, month, 1)).trigger('change');
+
+                                   $('.date-picker').focusout()//Added to remove focus from datepicker input box on selecting date
+                               }
+                           },
+                           beforeShow: function (input, inst) {
+
+                               inst.dpDiv.addClass('month_year_datepicker')
+
+                               if ((datestr = $(this).val()).length > 0) {
+                                   year = datestr.substring(datestr.length - 4, datestr.length);
+                                   month = datestr.substring(0, 2);
+                                   $(this).datepicker('option', 'defaultDate', new Date(year, month - 1, 1));
+                                   $(this).datepicker('setDate', new Date(year, month - 1, 1));
+                                   $(".ui-datepicker-calendar").hide();
+                               }
+                           }
+                       })
+    });
+
+</script>
+

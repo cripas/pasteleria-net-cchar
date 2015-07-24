@@ -1,0 +1,67 @@
+﻿@model APP_MVC02a.Models.insumo
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>insumo</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nomInsumo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nomInsumo)
+            @Html.ValidationMessageFor(model => model.nomInsumo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.stock)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.stock)
+            @Html.ValidationMessageFor(model => model.stock)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fechaVenc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fechaVenc)
+            @Html.ValidationMessageFor(model => model.fechaVenc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.idtipo_medida, "tipo_medida")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idtipo_medida", String.Empty)
+            @Html.ValidationMessageFor(model => model.idtipo_medida)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.idcategoriaIn, "categoriaIn")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idcategoriaIn", String.Empty)
+            @Html.ValidationMessageFor(model => model.idcategoriaIn)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

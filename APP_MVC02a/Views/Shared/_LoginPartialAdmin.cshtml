@@ -1,0 +1,13 @@
+﻿@{
+    var empleado = (APP_MVC02a.Models.empleado)HttpContext.Current.Session["sessionEmpleado"];
+ }
+@if (@empleado == null)
+{
+        <script  type="text/javascript">
+            window.location.href = '/Cuenta/Logueo';
+        </script>
+}
+else
+{
+    @empleado.nombre @empleado.apePat
+}

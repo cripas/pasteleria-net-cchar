@@ -1,0 +1,100 @@
+﻿@model  APP_MVC02a.Models.Cliente
+@{
+    ViewBag.Title = "Registrar";
+    var correo = @ViewData["email_nuevo"];
+}
+<div class="row">
+	<form action="Registrar" method="post" id="account-creation_form" class="std box">
+        <div id="center_column" class="center_column col-xs-12 col-sm-12"><div id="noSlide" style="display: block;"><h1 class="page-heading">Crear una cuenta</h1>
+		
+		<div class="account_creation">
+			<h4 class="page-subheading">Datos personales</h4>
+			@Html.ValidationSummary(true)
+			<div class="required form-group">
+				<label for="customer_firstname">Nombre <sup>*</sup></label>
+				<input onkeyup="$('#firstname').val(this.value);" type="text" class="is_required validate form-control" data-validate="isName" id="nombre" name="nombre" value="@Model.nombre">
+                 
+			</div>
+			<div class="required form-group">
+				<label for="customer_lastname">Apellido Paterno<sup>*</sup></label>
+				<input onkeyup="$('#lastname').val(this.value);" type="text" class="is_required validate form-control" data-validate="isName" id="apePaterno" name="apePaterno" value="@Model.apePaterno">
+			</div>
+            <div class="required form-group">
+				<label for="customer_lastname">Apellido Materno<sup>*</sup></label>
+				<input onkeyup="$('#lastname').val(this.value);" type="text" class="is_required validate form-control" data-validate="isName" id="apeMaterno" name="apeMaterno" value="@Model.apeMaterno">
+			</div>
+			<div class="required form-group">
+				<label for="asd">Correo electrónico <sup>*</sup></label>
+				<input type="text" class="is_required validate form-control" data-validate="isEmail" id="email" name="email" value="@Model.email">
+			</div>
+             <div class="required form-group">
+				<label for="customer_lastname">Número de DNI<sup>*</sup></label>
+				<input onkeyup="$('#lastname').val(this.value);" type="text" class="is_required validate form-control" data-validate="isName" id="dni" name="dni" value="@Model.dni" onkeypress="javascript:return solonumeros(event)">
+			</div>
+            <div class="form-group">
+				<label>Fecha de nacimiento</label>
+				<input onkeyup="$('#lastname').val(this.value);" type="text" class="is_required validate form-control" data-validate="isName" id="fechaNac" name="fechaNac" value="@Model.fechaNac">
+			</div>
+					
+			<div class="required password form-group">
+				<label for="passwd">Contraseña <sup>*</sup></label>
+				<input type="password" class="is_required validate form-control" data-validate="isPasswd" name="clave" id="clave" value="@Model.clave">
+				<span class="form_info">(Mínimo 5 caracteres)</span>
+			</div>
+					
+					</div>
+						
+		<div class="submit clearfix">
+			<input type="hidden" name="email_create" value="1">
+			<input type="hidden" name="is_new_customer" value="1">
+			<input type="hidden" class="hidden" name="back" value="my-account">			<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium">
+				<span>Registrarse<i class="icon-chevron-right right"></i></span>
+			</button>
+			<p class="pull-right required"><span><sup>*</sup>Campo requerido</span></p>
+		</div>
+	</form>
+</div></div><!-- #center_column -->
+										</div>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>
+<script type="text/javascript">
+    function solonumeros(e) {
+
+        var key;
+
+        if (window.event) // IE
+        {
+            key = e.keyCode;
+        }
+        else if (e.which) // Netscape/Firefox/Opera
+        {
+            key = e.which;
+        }
+
+        if (key < 48 || key > 57) {
+            return false;
+        }
+
+        return true;
+    }
+</script>
+<script>
+    $("#fechaNac").datepicker({ dateFormat: "dd/mm/yy" }).mask("99/99/9999");
+    $.validator.addMethod('date',
+    function (value, element, params) {
+        if (this.optional(element)) {
+            return true;
+        }
+        var ok = true;
+        try {
+            $.datepicker.parseDate('dd/mm/yy', value);
+        }
+        catch (err) {
+            ok = false;
+        }
+        return ok;
+    });
+
+    </script>

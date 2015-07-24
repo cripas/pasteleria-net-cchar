@@ -1,0 +1,57 @@
+﻿@model APP_MVC02a.Models.Cliente
+@{
+    ViewBag.Title = "Logueo";
+
+    var mierror = @ViewData["error"] as string;
+}
+
+<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<form action="VerificaCliente" method="post" id="create-account_form" class="box">
+				<h3 class="page-subheading">Crear una cuenta</h3>
+                 <label style="color:red">@mierror</label>
+				<div class="form_content clearfix">
+					<p>Escriba su correo electrónico para crear su cuenta</p>
+					<div class="alert alert-danger" id="create_account_error" style="display:none"></div>
+					<div class="form-group">
+						<label for="email_create">Correo electrónico</label>
+						<input type="text" class="is_required validate account_input form-control" data-validate="isEmail" id="email" name="email" value="">
+					</div>
+					<div class="submit">
+						<input type="hidden" class="hidden" name="back" value="http://tiendapasteleria.esy.es/prestashop/pedido?step=1">						<button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate">
+							<span>
+								<i class="icon-user left"></i>
+								Crear una cuenta
+							</span>
+						</button>
+						<input type="hidden" class="hidden" name="SubmitCreate" value="Crear una cuenta">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<form action="Logueo" method="post" id="login_form" class="box">
+				<h3 class="page-subheading">¿Ya está registrado?</h3>
+				<div class="form_content clearfix">
+                     @Html.ValidationSummary(true)
+					<div class="form-group">
+						<label for="email">Correo electrónico</label>
+						<input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="email" name="email" value="">
+					</div>
+					<div class="form-group">
+						<label for="passwd">Contraseña</label>
+						<input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="clave" name="clave" value="">
+					</div>
+					<p class="lost_password form-group"><a href="http://tiendapasteleria.esy.es/prestashop/recuperacion-contraseña" title="Recuperar la contraseña" rel="nofollow">¿Olvidó su contraseña?</a></p>
+					<p class="submit">
+						<input type="hidden" class="hidden" name="back" value="">						<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
+							<span>
+								<i class="icon-lock left"></i>
+								Iniciar sesión
+							</span>
+						</button>
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>

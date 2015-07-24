@@ -1,0 +1,341 @@
+﻿@model APP_MVC02a.ViewModels.VistaModelCarritoCompras
+
+@{
+    ViewBag.Title = "Carrito de Compras | Tortas Encantadas";
+   
+}
+<style>
+.efecto1{
+                -moz-box-shadow: 0 0px 5px #555555;
+                -webkit-box-shadow: 0 0px 5px #555555;
+                box-shadow: 0 0px 5px #555555;
+}
+</style>
+
+
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // Document.ready -> link up remove event handler
+        $(".RemoveLink").click(function () {
+            // Get the id from the link
+            var recordToDelete = $(this).attr("data-id");
+            if (recordToDelete != '') {
+                // Perform the ajax post
+                $.post("/CarritoCompras/RemoveFromCart", { "id": recordToDelete },
+                function (data) {
+                    // Successful requests get here
+                    // Update the page elements
+                    if (data.ItemCount == 0) {
+                        $('#row-' + data.DeleteId).fadeOut('slow');
+                    } else {
+                        //$('#item-count-' + data.DeleteId).text(data.ItemCount);
+                        $('#item-count-' + data.DeleteId).val(data.ItemCount);
+                        $('#update-message').text(data.Mensaje);
+                    }
+                    $('#cart-total').text("S/. "+data.TotalCarrito);
+                    
+                    $('#cart-status').text('Cart (' + data.CartCount + ')');
+                });
+            }
+        });
+
+
+        $(".EliminarDelCarrito").click(function () {
+            // Get the id from the link
+            var recordToDelete = $(this).attr("data-id");
+            if (recordToDelete != '') {
+                // Perform the ajax post
+                $.post("/CarritoCompras/EliminarDelCarrito", { "id": recordToDelete },
+                function (data) {
+                    // Successful requests get here
+                    // Update the page elements
+                    if (data.ItemCount == 1) {
+                        $('#row-' + data.DeleteId).fadeOut('slow');
+                    } else {
+                        //$('#item-count-' + data.DeleteId).text(data.ItemCount);
+                        $('#item-count-' + data.DeleteId).val(data.ItemCount);
+                  
+                    }
+                    $('#cart-total').text("S/. "+data.TotalCarrito);
+                    $('#update-message').text(data.Mensaje);
+                    $('#cart-status').text('Cart (' + data.CartCount + ')');
+                });
+            }
+        });
+
+
+    });
+
+  
+
+    function handleUpdate() {
+        // Load and deserialize the returned JSON data
+        var json = context.get_data();
+        var data = Sys.Serialization.JavaScriptSerializer.deserialize(json);
+        // Update the page elements
+        if (data.ItemCount == 0) {
+            $('#row-' + data.DeleteId).fadeOut('slow');
+        } else {
+            // $('#item-count-' + data.DeleteId).text(data.ItemCount);
+            $('#item-count-' + data.DeleteId).val(data.ItemCount);
+        }
+        $('#cart-total').text("S/. "+data.TotalCarrito);
+        $('#update-message').text(data.Mensaje);
+        $('#cart-status').text('Cart (' + data.CartCount + ')');
+    }
+</script>
+
+<div style="background-color: #FFF;" class="efecto1">
+    <div  style="background-color: #FFF;width: 1100px;margin-left: 35px;">
+
+        <div id="slider_row" class="row">
+			<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+		</div>
+        <div class="row">
+            <div id="center_column" class="center_column col-xs-12 col-sm-12">
+                <h1 id="cart_title" class="page-heading">
+					Productos en su carrito
+                   
+                    
+                     <span class="heading-counter">Su
+						carrito contiene <span id="summary_products_quantity">@Model.CarritoItems.Count productos</span>
+					</span>
+				</h1>
+
+                <ul class="step clearfix" id="order_step">
+                    <li class="step_current  first">
+                        <span><em>01.</em> Resumen</span>
+                    </li>
+                    <li class="step_todo second">
+                        <span><em>02.</em> Iniciar sesión</span>
+                    </li>
+                    <li class="step_todo third">
+                        <span><em>03.</em> Pedido</span>
+                    </li>
+                    <li class="step_todo four">
+					<span><em>04.</em> Pago</span>
+			        </li>
+                    <li class="step_todo five">
+                        <span><em>05.</em> Completo</span>
+                    </li>
+                </ul>
+
+                 <span id="update-message"></span>
+
+                <p id="emptyCartWarning" class="alert alert-warning unvisible">Su
+					carrito está vacío.</p>
+                <div class="cart_last_product">
+					<div class="cart_last_product_header">
+						<div class="left">Último producto añadido</div>
+					</div>
+					<a class="cart_last_product_img" href="#"> 
+					</a>
+					<div class="cart_last_product_content">
+						<p class="product-name">
+							<a href="#"> Vestido estampado </a>
+						</p>
+						<small> <a href="#"> Size : S, Color : Naranja </a>
+						</small>
+					</div>
+				</div>
+
+
+                <div id="order-detail-content" class="table_block table-responsive">
+					<table id="cart_summary"
+						class="table table-bordered stock-management-on">
+						<thead>
+							<tr>
+								<th class="cart_product first_item">Producto</th>
+								<th class="cart_description item">Descripción</th>
+								<th class="cart_avail item text-center">Estado</th>
+								<th class="cart_unit item text-right">Precio unitario</th>
+								<th class="cart_quantity item text-center">Cant.</th>
+								<th class="cart_delete last_item">&nbsp;</th>
+								<th class="cart_total item text-right">Total</th>
+							</tr>
+						</thead>
+						<tfoot>
+
+
+
+
+							<tr class="cart_total_price">
+								<td rowspan="3" colspan="2" id="cart_voucher"
+									class="cart_voucher"></td>
+								<td colspan="3" class="text-right">Total productos
+									(impuestos inc.)</td>
+								<td colspan="2" class="">S/.<a id="total_product"></a></td>
+							</tr>
+							<tr style="display: none;">
+								<td colspan="3" class="text-right">Total de
+									envoltorio-regalo (impuestos inc.)</td>
+								<td colspan="2" class="price-discount price" id="total_wrapping">S/.
+									0</td>
+							</tr>
+							<tr class="cart_total_delivery unvisible" style="display: none;">
+								<td colspan="3" class="text-right">Total envío:</td>
+								<td colspan="2" class="price" id="total_shipping">¡Envío
+									gratuito!</td>
+							</tr>
+
+							<tr class="cart_total_price">
+								<td colspan="3" class="total_price_container text-right"><span>Total</span>
+								</td>
+
+								<td  colspan="2"  id="cart-total">S/. @Model.CarritoTotal
+								</td>
+							</tr>
+						</tfoot>
+						<!--<tbody id="lstProductosCarro">--->
+
+
+						
+							<!--<s:iterator value="productos">-->
+                        @foreach (var item in Model.CarritoItems) { 
+                                
+								<tr id="row-@item.RecordId"
+									class="cart_item address_0 even first_item">
+									<td class="cart_product"><a href="#"><img
+											src="/imagenes/productosimg/@item.producto.nomFoto" alt="Blusa" width="98"
+											height="98"></a></td>
+									<td class="cart_description">
+										<p class="product-name">
+											
+                                    @Html.ActionLink(item.producto.nomProducto, "Detalle", "Tienda", new { idproducto = item.idproducto }, null)
+										</p>
+                                        <input  type="hidden" id="txtIdProducto" value="@item.idproducto" />
+									<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+									<td class="cart_unit" data-title="Precio unitario">
+										<ul class="price text-right" id="product_price_2_7_0">
+											<li class="price">S/. @item.producto.precio</li>
+										</ul> 
+									</td>
+
+									<td class="cart_quantity text-center"><input type="hidden"
+										value="3" name="quantity_2_7_0_0_hidden"> <input
+										readonly="readonly" id="item-count-@item.RecordId" size="2" type="text"
+										autocomplete="off"
+										class="cart_quantity_input form-control grey"
+										value="@item.Count" name="quantity_2_7_0_0">
+										<div class="cart_quantity_button clearfix">
+											<!--<a rel="nofollow"
+												class="cart_quantity_down btn btn-default button-minus RemoveLink"
+												id="restar" title="Sustraer">
+												<span><i class="icon-minus"></i></span></a>-->
+                                             <a href="#" class="RemoveLink cart_quantity_down btn btn-default button-minus" title="Sustraer" data-id="@item.RecordId">
+                                                 <span><i class="icon-minus"></i></span></a>
+											
+                                            <!-- <a rel="nofollow"
+												class="cart_quantity_up btn btn-default button-plus"
+												id="sumar-item.idproducto" title="Añadir"><span><i
+													class="icon-plus"></i></span></a>-->
+
+                                            <a href="@Url.Action("AddToCart", "CarritoCompras", new { id =@item.idproducto, cant=1})" class="cart_quantity_down btn btn-default button-plus" title="Añadir">
+                                                 <span><i class="icon-plus"></i></span></a>
+
+										</div></td>
+									<td class="cart_delete text-center" data-title="Delete">
+										<div>
+											<!--<a rel="nofollow" style="cursor: pointer;" title="Eliminar"
+												class="cart_quantity_delete"
+												onclick="eliminarProdCarro(<%=cont%>)"><i
+												class="icon-trash"></i></a>-->
+
+                                            <a href="#" class="EliminarDelCarrito" data-id="@item.RecordId">Elimina de tu carrito</a>
+
+
+
+										</div>
+									</td>
+                                      <script type="text/javascript">
+                                          var cant= @item.Count;
+                                          var preci=@item.producto.precio
+                                          var id=@item.RecordId;
+                                             
+                                          var p=cant*preci;
+                                          $('#totalPrecio-'+id).text(p);
+                                          
+                                       
+                                         
+                                    </script>
+
+
+
+
+									<td class="cart_total" data-title="Total">S/. <span id ="totalPrecio-@item.RecordId"></span>
+                                        
+                                      
+									</td>
+
+								</tr>
+
+								
+							<!--</s:iterator>-->
+                        }
+
+
+
+
+
+
+							
+
+					<!--	</tbody>--->
+					</table>
+
+
+				</div>
+
+                <div id="HOOK_SHOPPING_CART"></div>
+				<p class="cart_navigation clearfix">
+					<a href="@Url.Action("Pedido","Pedido")"
+						class="button btn btn-default standard-checkout button-medium"
+						title="Generar Pedido" style=""> <span>Generar Pedido<i
+							class="icon-chevron-right right"></i></span>
+					</a> <a href="@Url.Action("Index","Tienda",null)"
+						class="button-exclusive btn btn-default"
+						title="Continuar la compra"> <i class="icon-chevron-left"></i>Continuar
+						la compra
+					</a>
+				</p>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+<script  type="text/javascript">
+    var item=$("#txtIdProducto").val();
+
+    /*  $("#sumar-"+item).click(function(){
+         // var cantidad=$("#txtCantidad").val();
+          window.location.href = '/CarritoCompras/AddToCart?id=' +$("#txtIdProducto").val() +'&cant=' +1;
+       });*/
+
+
+    /*  $("#restar").click(function(){
+          //var cantidad=$("#txtCantidad").val();
+          window.location.href = '/CarritoCompras/RemoveFromCart?id='+$("#txtIdProducto").val();
+       });*/
+
+</script>

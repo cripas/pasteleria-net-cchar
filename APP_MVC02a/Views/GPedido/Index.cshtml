@@ -1,0 +1,165 @@
+﻿@model IEnumerable<APP_MVC02a.Models.pedido>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.contacto_nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contacto_ape)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contacto_mail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contacto_fijo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contacto_movil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipoentrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaentrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tcomprobante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ruc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.razonsocial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entrega_dir)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entrega_urba)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.subTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.igv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalpedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.distrito.descrip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo_compPago.descrip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado.descrip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_PAGO.descrip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entrega_ref)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.contacto_nom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contacto_ape)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contacto_mail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contacto_fijo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contacto_movil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipoentrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaentrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tcomprobante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ruc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.razonsocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entrega_dir)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entrega_urba)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.subTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.igv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalpedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.distrito.descrip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo_compPago.descrip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado.descrip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_PAGO.descrip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entrega_ref)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idpedido }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idpedido }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idpedido })
+        </td>
+    </tr>
+}
+
+</table>

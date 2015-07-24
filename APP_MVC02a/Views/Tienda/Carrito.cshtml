@@ -1,0 +1,338 @@
+﻿@model IEnumerable<APP_MVC02a.Models.producto>
+@{
+    ViewBag.Title = "Carrito de Compras| Pasteleria San Elias";
+}
+
+<style>
+.efecto1{
+                -moz-box-shadow: 0 0px 5px #555555;
+                -webkit-box-shadow: 0 0px 5px #555555;
+                box-shadow: 0 0px 5px #555555;
+}
+</style>
+											
+<div style="background-color: #FFF;" class="efecto1">
+<div  style="background-color: #FFF;width: 1100px;margin-left: 35px;">
+											
+<!-- Breadcrumb -->
+
+<!-- /Breadcrumb -->
+
+										<div id="slider_row" class="row">
+						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+					</div>
+					<div class="row">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+<h1 id="cart_title" class="page-heading">Productos en su carrito
+			<span class="heading-counter">Su carrito contiene
+			<span id="summary_products_quantity"><s:property value="totalProdenCarro" /> productos</span>
+		</span>
+	</h1>
+
+
+
+
+
+
+<!-- Steps -->
+<ul class="step clearfix" id="order_step">
+	<li class="step_current  first">
+					<span><em>01.</em> Resumen</span>
+			</li>
+	<li class="step_todo second">
+					<span><em>02.</em> Iniciar sesión</span>
+			</li>
+	<li class="step_todo third">
+					<span><em>03.</em> Dirección</span>
+			</li>
+	<li class="step_todo four">
+					<span><em>04.</em> Transporte</span>
+			</li>
+	<li id="step_end" class="step_todo last">
+		<span><em>05.</em> Pago</span>
+	</li>
+</ul>
+<!-- /Steps -->
+
+
+
+
+	<p id="emptyCartWarning" class="alert alert-warning unvisible">Su carrito está vacío.</p>
+			<div class="cart_last_product">
+			<div class="cart_last_product_header">
+				<div class="left">Último producto añadido</div>
+			</div>
+			<a class="cart_last_product_img" href="http://tiendapasteleria.esy.es/prestashop/vestidos-informales/3-vestido-estampado.html">
+				<img src="http://tiendapasteleria.esy.es/prestashop/8-small_default/vestido-estampado.jpg" alt="Vestido estampado">
+			</a>
+			<div class="cart_last_product_content">
+				<p class="product-name">
+					<a href="http://tiendapasteleria.esy.es/prestashop/vestidos-informales/3-vestido-estampado.html#/size-s/color-naranja">
+						Vestido estampado
+					</a>
+				</p>
+									<small>
+						<a href="http://tiendapasteleria.esy.es/prestashop/vestidos-informales/3-vestido-estampado.html#/size-s/color-naranja">
+							Size : S, Color : Naranja
+						</a>
+					</small>
+							</div>
+		</div>
+					
+	
+	<div id="order-detail-content" class="table_block table-responsive">
+		<table id="cart_summary" class="table table-bordered stock-management-on">
+			<thead>
+				<tr>
+					<th class="cart_product first_item">Producto</th>
+					<th class="cart_description item">Descripción</th>
+																	<th class="cart_avail item text-center">Estado</th>
+										<th class="cart_unit item text-right">Precio unitario</th>
+					<th class="cart_quantity item text-center">Cant.</th>
+					<th class="cart_delete last_item">&nbsp;</th>
+					<th class="cart_total item text-right">Total</th>
+				</tr>
+			</thead>
+			<tfoot>
+				
+				
+				
+													
+															<tr class="cart_total_price">
+							<td rowspan="3" colspan="2" id="cart_voucher" class="cart_voucher">
+															</td>
+							<td colspan="3" class="text-right">Total productos (impuestos inc.)</td>
+							<td colspan="2" class="" >S/.<a id="total_product"></a></td>
+						</tr>
+													<tr style="display: none;">
+					<td colspan="3" class="text-right">
+													Total de envoltorio-regalo (impuestos inc.)											</td>
+					<td colspan="2" class="price-discount price" id="total_wrapping">S/. 0</td>
+				</tr>
+									<tr class="cart_total_delivery unvisible" style="display: none;">
+						<td colspan="3" class="text-right">Total envío:</td>
+						<td colspan="2" class="price" id="total_shipping">¡Envío gratuito!</td>
+					</tr>
+								
+								<tr class="cart_total_price">
+					<td colspan="3" class="total_price_container text-right">
+						<span>Total</span>
+					</td>
+											<td colspan="2" class="" id="total_price_container">
+							S/.<a id="total_product2"></a>
+						</td>
+									</tr>
+			</tfoot>
+			<tbody id="lstProductosCarro">
+																																																										
+					
+
+				@*	<% int cont=0; %>
+				@foreach(var productos in Model){																																																
+					<tr id="product_2_7_0_0" class="cart_item address_0 even first_item">
+	<td class="cart_product">
+		<a href="http://tiendapasteleria.esy.es/prestashop/blusas/2-blusa.html#/size-s/color-negro"><img src="<s:property value="nomFoto" />" alt="Blusa" width="98" height="98"></a>
+	</td>
+	<td class="cart_description">
+						<p class="product-name"><a href="ABuscaProducto2?productobean.idproducto=<s:property value="idproducto" />"><s:property value="nomProducto" /></a></p>
+			<!--<small class="cart_ref">SKU : demo_2</small>		<small><a href="#">Size : S, Color : Negro</a></small>	</td> -->
+			<td class="cart_avail"><span class="label label-success">Disponible</span></td>
+		<td class="cart_unit" data-title="Precio unitario">
+		<ul class="price text-right" id="product_price_2_7_0"><li class="price">S/. <s:property value="precio" /></li></ul>
+		<input id="Hprecio<%=cont %>" type="hidden" value="<s:property value="precio" />" />
+	</td>
+
+	<td class="cart_quantity text-center">
+								
+				<input type="hidden" value="3" name="quantity_2_7_0_0_hidden">
+				<input readonly="readonly" id="txtCant<%=cont %>" size="2" type="text" autocomplete="off" class="cart_quantity_input form-control grey" value="<s:property value="cant" />" name="quantity_2_7_0_0">
+				<div class="cart_quantity_button clearfix">
+									<a rel="nofollow" class="cart_quantity_down btn btn-default button-minus" id="restar"  onclick="restarCant(<%=cont %>)" title="Sustraer">
+				<span><i class="icon-minus"></i></span>
+				</a>
+				                	<a rel="nofollow"  class="cart_quantity_up btn btn-default button-plus" id="sumar" onclick="sumarCant(<%=cont %>)" title="Añadir"><span><i class="icon-plus"></i></span></a>
+									
+				</div>
+				
+				
+				
+						</td>
+			<td class="cart_delete text-center" data-title="Delete">
+					<div>
+				<a rel="nofollow" style="cursor: pointer;" title="Eliminar" class="cart_quantity_delete" onclick="eliminarProdCarro(<%=cont %>)" ><i class="icon-trash"></i></a>
+			</div>
+				</td>
+		<td class="cart_total" data-title="Total">
+		S/. <span id="totalP<%=cont %>" >
+			
+		</span>
+		<input id="Htxtidpro<%=cont %>" type="hidden" value="productobean.idproducto=<s:property value="idproducto"/>" />
+	</td>
+
+</tr>
+
+<script type="text/javascript">
+
+				var precio=parseFloat($('#Hprecio'+<%=cont %>).val());
+				var cant=parseInt($('#txtCant'+<%=cont %>).val())
+				var totalItem= precio*cant;
+					totalItem=parseFloat(totalItem).toFixed(2);
+				
+				$('#totalP'+<%=cont %>).text(totalItem);
+				
+				///////////////////////////////////////////
+				
+
+				
+				
+		</script>
+<%cont++; %>
+}*@
+
+<script type="text/javascript">
+					var cont='<%=cont%>';
+					var total=parseFloat(0)
+					for (var i = 0; i < cont; i++) {
+						var totalP=$('#totalP'+i).text();
+						total=total+parseFloat(totalP);
+						
+					}
+					total=parseFloat(total).toFixed(2)
+					
+					$('#total_product').text(total);
+					$('#total_product2').text(total);
+					</script>
+		
+</tbody>
+					</table>
+					
+					
+					<script type="text/javascript">
+					
+					function eliminarProdCarro(id){
+						var totalP=parseFloat($("#totalP"+id).text())
+						var total1=$('#total_product').text();
+						var total2=$('#total_product2').text();
+						resta=parseFloat(total1)-totalP;
+						$('#total_product').text(parseFloat(resta).toFixed(2));
+						$('#total_product2').text(parseFloat(resta).toFixed(2));
+						
+						$.ajax({
+			                type: 'POST',
+			                url:'AEliminaFilaCarro.action?'+$("#Htxtidpro"+id).val(),
+			              /*   dataType: 'json', */
+			                success: function(data){
+			                	 document.getElementById('lstProductosCarro').innerHTML=data;;
+			                        }
+
+			                   
+			            });
+					}
+					
+				 function sumarCant(id){
+					 var cantactual=parseInt($('#txtCant'+id).val())
+			 			
+					 $("#txtCant"+id).val(cantactual+1)
+					actualizaTotalItem(id)
+					actualizaTotal()
+					
+					$.ajax({
+		                type: 'POST',
+		                url:'AlstProdCarro.action?productobean.cant='+$("#txtCant"+id).val()+'&'+$("#Htxtidpro"+id).val(),
+		              /*   dataType: 'json', */
+		                success: function(data){
+		                	 document.getElementById('lstProductosCarro').innerHTML=data;;
+		                        }
+		                   
+		            });
+					 
+					
+					 
+					 var totFilas=parseInt($('#cart_summary >tbody >tr').length);
+						
+					 for (var i = 0; i <totFilas ; i++) {
+						 actualizaTotalItem(i)
+							actualizaTotal()
+							
+					}
+					 
+			       return false;			 
+				 }
+				 
+				
+				 
+				function restarCant(id){
+					 var cantactual=parseInt($('#txtCant'+id).val());
+					 
+					 if(cantactual!=1){
+						 $("#txtCant"+id).val(cantactual-1)
+						 actualizaTotalItem(id)
+						 actualizaTotal()
+						 
+						 $.ajax({
+				                type: 'POST',
+				                url:'AlstProdCarro.action?productobean.cant='+$("#txtCant"+id).val()+'&'+$("#Htxtidpro"+id).val(),
+				              /*   dataType: 'json', */
+				                success: function(data){
+				                	 document.getElementById('lstProductosCarro').innerHTML=data;;
+				                        }
+
+				                   
+				            });
+						 
+					 }else {
+							return false
+						}
+				
+				 }
+				
+				function actualizaTotalItem(id){
+					var precio=parseFloat($('#Hprecio'+id).val());
+					var cant=parseInt($('#txtCant'+id).val())
+					var totalItem= precio*cant;
+						totalItem=parseFloat(totalItem).toFixed(2);
+					
+					$('#totalP'+id).text(totalItem);
+				}
+				
+				 function actualizaTotal(){
+					var cont=parseInt($('#cart_summary >tbody >tr').length);
+					
+					var total=parseFloat(0)
+					for (var i = 0; i < cont; i++) {
+						var totalP=$('#totalP'+i).text();
+						total=total+parseFloat(totalP);
+						
+					}
+					total=parseFloat(total).toFixed(2)
+					
+					$('#total_product').text(total);
+					$('#total_product2').text(total);
+				} 
+				
+				
+				</script>
+					
+																				
+	</div> <!-- end order-detail-content -->
+
+	
+	
+	
+																								
+		<div id="HOOK_SHOPPING_CART"></div>
+	<p class="cart_navigation clearfix">
+					<a href="#" class="button btn btn-default standard-checkout button-medium" title="Ir a la caja" style="">
+				<span>Ir a la caja<i class="icon-chevron-right right"></i></span>
+			</a>
+				<a href="~/Tienda" class="button-exclusive btn btn-default" title="Continuar comprando">
+			<i class="icon-chevron-left"></i>Continuar la compra
+		</a>
+	</p>
+	
+					</div><!-- #center_column -->
+										</div><!-- .row -->
+				
+</div></div>

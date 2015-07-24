@@ -1,0 +1,199 @@
+﻿@model IEnumerable<APP_MVC02a.Models.pedido_productos>
+@{
+    ViewBag.Title = "Seguimiento";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+   // var nomFoto = @ViewData["nomFoto"];
+   // var nomProducto = @ViewData["nomProducto"];
+    var pedido = @ViewData["pedido"] as APP_MVC02a.Models.pedido;
+
+    
+}
+
+<div class="row">
+			<!-- left column -->
+    <div class="col-md-12">
+
+				<div class="box box-primary">
+					<div class="box-body">
+                       
+                        <div class="form-group">
+							<label>Estados</label>
+                            <h3><label id="4" class="label label-default">1. Pagado</label></h3>
+                            <h3><label id="5" class="label label-default">2. Aceptado</label></h3>
+                            <h3><label id="6" class="label label-default">3. En Produccion</label></h3>
+                            <h3><label id="7" class="label label-default">4. En Almacen</label></h3>
+                            <h3><label id="8" class="label label-default">5. En Transporte</label></h3>
+                            <h3><label id="9" class="label label-default">6. Entregado</label></h3>
+                         
+                        </div>
+
+						
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="box box-warning">
+					<div class="box-body">
+							<!-- text input -->
+							<div class="form-group">
+								<label>Código de Pedido</label> <input id="txtIdPedido"
+									type="text" class="form-control" disabled
+									value='@pedido.idpedido' />
+							</div>
+							<div class="form-group">
+								<label>Cliente</label> <input type="text" class="form-control"
+									disabled
+									value='@pedido.contacto_nom @pedido.contacto_ape' />
+							</div>
+							<div class="form-group">
+								<label>Distrito</label> <input type="text" class="form-control"
+									disabled
+									value="@pedido.distrito.descrip"></input>
+							</div>
+							<div class="form-group">
+								<label>Tipo de Pago</label> <input type="text"
+									class="form-control" disabled
+									value="@pedido.TIPO_PAGO.descrip"></input>
+							</div>
+
+
+
+							<div class="form-group">
+
+								<table id="idDetallePedido"
+									class="table table-bordered table-striped table-condensed table-hover">
+									<thead>
+										<tr>
+											<th>Producto</th>
+											<th>ID Producto</th>
+											<th>Nombre</th>
+											<th>Precio Vendido</th>
+											<th>Cantidad</th>
+											<th>Total</th>
+										</tr>
+									</thead>
+									<tbody>
+
+                                       
+                                       @foreach (var item in Model) {
+                                        <tr>
+                                            <td><img src="~/imagenes/productosimg/@item.producto.nomFoto" width="80" height="50"/></td>
+                                            <td> @Html.DisplayFor(modelItem => item.idproducto)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.producto.nomProducto)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.precio)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.cantidad)</td>
+                                             <td>@Html.DisplayFor(modelItem => item.total)</td>
+   
+                                            
+                                        </tr>
+                                            }
+                                            
+
+									</tbody>
+									<tfoot>
+										<tr>
+											<th>Producto</th>
+											<th>ID Producto</th>
+											<th>Nombre</th>
+											<th>Precio Vendido</th>
+											<th>Cantidad</th>
+											<th>Total</th>
+										</tr>
+									</tfoot>
+								</table>
+
+
+
+
+							</div>
+
+
+
+
+
+					</div>
+					<!-- /.box-body -->
+				</div>
+				<!-- /.box -->
+
+			</div>
+			<!--/.col (left) -->
+
+			<div class="col-md-6">
+				<div class="box box-warning">
+
+					<div class="box-body">
+							<div class="form-group">
+								<label>Fecha Pedido</label> <input type="text"
+									class="form-control" disabled
+									value="@pedido.fechaPedido"></input>
+							</div>
+							<div class="form-group">
+								<label>Fecha de Entrega</label> <input type="text"
+									class="form-control" disabled
+									value="@pedido.fechaentrega"></input>
+							</div>
+
+
+							<div class="form-group">
+								<label>Precio Total del Pedido</label> <input type="text"
+									class="form-control" disabled
+									value="@pedido.totalpedido"></input>
+							</div>
+
+							<div class="form-group">
+								<label>Observación del Cliente</label> <input type="text"
+									class="form-control" disabled
+									value="@pedido.notas"></input>
+							</div>
+                        <input type="hidden" value="@pedido.estado.descrip" id="estadofinal" />
+
+							<div class="form-group">
+
+								<a id="btnupestado" href="~/Seguimiento/cambiaEstado?idPedido=@pedido.idpedido" class="btn btn-primary btn-block">Continuar al siguiente estado</a>
+							</div>
+                        <div class="form-group">
+                            <div id="btnRechazar" style="display:none;">
+								<a href="~/Seguimiento/rechazarPedido?idPedido=@pedido.idpedido" class="btn btn-danger btn-block">Rechazar Pedido</a>
+							</div>
+                            </div>
+						<!--	<div class="form-group">
+								<button class="btn btn-warning btn-block">Consultar
+									Maquinaria</button>
+							</div>
+							<div class="form-group">
+								<button class="btn btn-info btn-block">Consultar
+									Personal</button>
+							</div>-->
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			
+
+
+		</div>
+
+	<script type="text/javascript">
+  	
+	    $(document).ready(function () {
+	        document.getElementById("@pedido.idestado").className = "label label-success";
+	        var estado= $("#estadofinal").val();
+	        if (estado == "Entregado" || estado == "Entregado")
+	        {
+	            $('#btnupestado').addClass('disabled');
+	        }
+	        if (estado == "Pagado") {
+	            $('#btnRechazar').show();
+	        }
+
+	      
+	    });
+		</script>

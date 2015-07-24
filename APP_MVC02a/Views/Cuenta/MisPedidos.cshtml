@@ -1,0 +1,89 @@
+﻿@model IEnumerable<APP_MVC02a.Models.pedido>
+@{
+    ViewBag.Title = "MisPedidos";
+    Layout = "~/Views/Shared/_Tienda_Layout.cshtml";
+}
+
+
+    <style>
+.efecto1{
+                -moz-box-shadow: 0 0px 5px #555555;
+                -webkit-box-shadow: 0 0px 5px #555555;
+                box-shadow: 0 0px 5px #555555;
+}
+</style>
+											
+<div style="background-color: #FFF;" class="efecto1">
+<div  style="background-color: #FFF;width: 1100px;margin-left: 35px;">
+											
+<!-- Breadcrumb -->
+
+<!-- /Breadcrumb -->
+
+										<div id="slider_row" class="row">
+						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+					</div>
+					<div class="row">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+<h1 id="cart_title" class="page-heading"> CUENTA --> Mis Pedidos	</h1>
+
+
+         
+                                    <table class="table table-bordered table-striped table-condensed table-hover dataTable">
+                                       <thead style="background-color:#b1c7d5">
+                                         <tr>
+                                            <th style="width: 10px">Codigo</th>
+                                            <th>Cont.Nombre</th>
+                                            <th>Cont.Email</th>
+                                            <th>Cont.Movil</th>
+                                            <th>Fecha Pedido</th>
+                                            <th>Fecha Entrega</th>
+ 
+                                            <th>Urb.</th>
+                                            <th>Referencia</th>
+                                            <th>Total</th>
+                                            <th>Distrito</th>
+                                            <th>Comp.Pago</th>
+                                            <th>Medio Pago</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                           </thead>
+                                        <tbody>
+                                            @foreach (var item in Model) {
+                                        <tr>
+                                            <td> @Html.DisplayFor(modelItem => item.idpedido)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.contacto_nom)  @Html.DisplayFor(modelItem => item.contacto_ape)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.contacto_mail)</td>
+                    
+                                            <td> @Html.DisplayFor(modelItem => item.contacto_movil)</td>
+
+                                            <td> @Html.DisplayFor(modelItem => item.fechaPedido)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.fechaentrega)</td>
+
+                                            <td> @Html.DisplayFor(modelItem => item.entrega_urba)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.entrega_ref)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.totalpedido)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.distrito.descrip)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.tipo_compPago.descrip)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.TIPO_PAGO.descrip)</td>
+                                            <td> 
+                                                <span class="label label-default">
+                                                @Html.DisplayFor(modelItem => item.estado.descrip)</span>
+
+                                            </td>
+                                            
+                                            
+                                            
+                                        </tr>
+                                            }
+                                        
+                                    </tbody></table>
+
+                            
+	
+					</div><!-- #center_column -->
+										</div><!-- .row -->
+				
+</div></div>

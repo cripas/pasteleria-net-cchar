@@ -1,0 +1,75 @@
+﻿@model IEnumerable<APP_MVC02a.Models.producto>
+
+@{
+    ViewBag.Title = "Listado de Productos";
+}
+<script src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" type="text/javascript"></script>
+<link href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    $(function () {
+        $("#idListadoProducto").dataTable();
+
+    });
+
+</script>
+<h2>Listado de Productos</h2>
+
+<p>
+   @* @Html.ActionLink("Crear Nuevo", "Create")*@
+    <a href="Producto/Create" class="btn btn-success btn-flat">Registrar Nuevo</a>
+</p>
+<table id="idListadoProducto" class="table table-bordered table-striped table-condensed table-hover">
+   <thead>
+    <tr>
+        <th>
+           Codigo
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+           Descripcion
+        </th>
+        <th>
+            Precio
+        </th>
+
+        <th>
+            Estado
+        </th>
+        <th>
+            Categoria
+        </th>
+        <th></th>
+    </tr>
+</thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idproducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descProd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado.descrip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.categoriaProd.descrip)
+        </td>
+        <td>
+            @Html.ActionLink("Modifircar", "Edit", new { id=item.idproducto }) |
+            @Html.ActionLink("Ver", "Details", new { id=item.idproducto }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.idproducto })
+        </td>
+    </tr>
+}</tbody>
+
+</table>

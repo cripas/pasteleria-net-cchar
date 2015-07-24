@@ -1,0 +1,59 @@
+﻿@model IEnumerable<APP_MVC02a.Models.Seguimiento>
+@{
+    ViewBag.Title = "SeguimientoPedidoC";
+    Layout = "~/Views/Shared/_Tienda_Layout.cshtml";
+}
+
+    <style>
+.efecto1{
+                -moz-box-shadow: 0 0px 5px #555555;
+                -webkit-box-shadow: 0 0px 5px #555555;
+                box-shadow: 0 0px 5px #555555;
+}
+</style>
+											
+<div style="background-color: #FFF;" class="efecto1">
+<div  style="background-color: #FFF;width: 1100px;margin-left: 35px;">
+											
+<!-- Breadcrumb -->
+
+<!-- /Breadcrumb -->
+
+										<div id="slider_row" class="row">
+						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+					</div>
+					<div class="row">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+<h1 id="cart_title" class="page-heading"> CUENTA --> Seguimiento de Pedidos	</h1>
+
+<form action="SeguimientoPedidoC" method="get">
+<label>Codigo de Pedido:  </label><input name="idPedido" id="idPedido" type="text"/>
+<input type="submit" value="Consultar" />
+
+                                    <table class="table table-bordered table-striped table-condensed table-hover dataTable" style="width:400px;">
+                                       <thead style="background-color:#b1c7d5">
+                                         <tr>
+                                            <th>Codigo Pedido</th>
+                                            <th>Estado</th>
+                                            <th>fecha</th>
+                                        </tr>
+                                           </thead>
+                                        <tbody>
+                                            @foreach (var item in Model) {
+                                        <tr>
+                                            <td> @Html.DisplayFor(modelItem => item.idpedido)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.estado.descrip)</td>                                           
+                                            <td> @Html.DisplayFor(modelItem => item.fechacambio)</td>
+                                        </tr>
+                                            }
+                                        
+                                    </tbody></table>
+
+</form>                     
+	
+					</div><!-- #center_column -->
+										</div><!-- .row -->
+				
+</div></div>

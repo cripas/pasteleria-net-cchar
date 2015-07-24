@@ -1,0 +1,22 @@
+﻿@model APP_MVC02a.Models.tipo_medida
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>tipo_medida</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descrip)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.idtipo_medida }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

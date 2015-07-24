@@ -1,0 +1,56 @@
+﻿@model APP_MVC02a.Models.producto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalle</h2>
+
+<fieldset>
+
+    <div class="display-label">
+      <strong>Nombre:</strong>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nomProducto)
+    </div>
+
+    <div class="display-label">
+         <strong>Descripcion::</strong>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descProd)
+    </div>
+
+    <div class="display-label">
+         <strong>Precio:</strong>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.precio)
+    </div>
+
+    <div class="display-label">
+          <strong>Imagen del Producto:</strong>
+    </div>
+    <div class="display-field">
+       <img src="~/imagenes/productosimg/@Url.Content(Model.nomFoto)" width="300px" height="260px" />
+    </div>
+
+    <div class="display-label">
+         <strong>Estado:</strong>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado.descrip)
+    </div>
+
+    <div class="display-label">
+          <strong>Categoria:</strong>
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.categoriaProd.descrip)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Modificar", "Edit", new { id=Model.idproducto }) |
+    @Html.ActionLink("Regresar a la Lista", "Index")
+</p>

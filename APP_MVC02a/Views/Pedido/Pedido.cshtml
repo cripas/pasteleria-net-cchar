@@ -1,0 +1,241 @@
+﻿@model APP_MVC02a.Models.pedido
+@{
+    ViewBag.Title = "Pedido";
+    Layout = "~/Views/Shared/_Tienda_Layout.cshtml";
+}
+<style>
+.efecto1{
+                -moz-box-shadow: 0 0px 5px #555555;
+                -webkit-box-shadow: 0 0px 5px #555555;
+                box-shadow: 0 0px 5px #555555;
+}
+</style>
+											
+<div style="background-color: #FFF;" class="efecto1">
+<div  style="background-color: #FFF;width: 1100px;margin-left: 35px;">
+											
+<!-- Breadcrumb -->
+
+<!-- /Breadcrumb -->
+
+										<div id="slider_row" class="row">
+						<div id="top_column" class="center_column col-xs-12 col-sm-12"></div>
+					</div>
+					<div class="row">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+<h1 id="cart_title" class="page-heading">Registro de Pedido
+		
+	</h1>
+
+
+
+
+
+
+<!-- Steps -->
+<ul class="step clearfix" id="order_step">
+	<li class="step_todo  first">
+					<span><em>01.</em> Resumen</span>
+			</li>
+	<li class="step_todo second">
+					<span><em>02.</em> Iniciar sesión</span>
+			</li>
+	<li class="step_current third">
+					<span><em>03.</em> Pedido</span>
+			</li>
+    <li class="step_todo four">
+					<span><em>04.</em> Pago</span>
+			</li>
+	<li class="step_todo four">
+					<span><em>05.</em> Completo</span>
+			</li>
+</ul>
+<!-- /Steps -->
+
+<form action="Pedido" method="post" id="account-creation_form" class="std box">
+    @Html.ValidationSummary(true)
+		 
+		<div class="account_creation">
+			<h3 class="page-subheading">Personas de Contacto</h3>
+			
+			<div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Nombre</label>
+				  
+                        <input value="@Model.contacto_nom" id="contacto_nom" name="contacto_nom" class="form-control" />
+                       
+				  
+				 	 </div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Apellido</label>
+
+				        @Html.TextBoxFor(model => model.contacto_ape, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.contacto_ape)
+				 	 </div>
+				</div>
+            <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">E-mail</label>
+
+				        @Html.TextBoxFor(model => model.contacto_mail, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.contacto_mail)
+				 	 </div>
+				</div>
+            <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Telefono Celular</label>
+
+                        <input type="text" value="@Model.contacto_movil" name="contacto_movil" id="contacto_movil"  class="form-control" onkeypress="javascript:return solonumeros(event)" />
+				       
+                        @Html.ValidationMessageFor(model => model.contacto_movil)
+				 	 </div>
+				</div>
+            <h3 class="page-subheading">Datos del Pedido</h3>
+			<!--	<div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Tipo de Entrega</label>
+
+				       <select class="form-control">
+                           <option value="0">Seleccione</option>
+                          <option value="1">Delivery</option>
+                          <option value="2">En Tienda</option>
+                        </select>
+				 	 </div>
+				</div> -->
+             <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Tipo de Comprobante:</label>
+
+				        @Html.DropDownList("idtipo_compPago", String.Empty)
+            @Html.ValidationMessageFor(model => model.idtipo_compPago)
+				 	 </div>
+				</div>
+           <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Fecha de Entrega</label>
+
+				        @Html.EditorFor(model => model.fechaentrega, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.fechaentrega)
+				 	 </div>
+				</div>
+         
+            <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">RUC</label>
+                        <input type="text" name="ruc" id="ruc"  class="form-control" onkeypress="javascript:return solonumeros(event)" />
+				       
+                        @Html.ValidationMessageFor(model => model.ruc)
+				 	 </div>
+				</div>
+            <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Razon Social</label>
+
+				        @Html.TextBoxFor(model => model.razonsocial, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.razonsocial)
+				 	 </div>
+				</div>
+
+             <h3 class="page-subheading">Direccion de Entrega</h3>
+             <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Direccion</label>
+
+				        @Html.TextBoxFor(model => model.entrega_dir, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.entrega_dir)
+				 	 </div>
+				</div>
+             <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Urbanizacion</label>
+
+				        @Html.TextBoxFor(model => model.entrega_urba, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.entrega_urba)
+				 	 </div>
+				</div>
+             <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Distrito</label>
+
+				        @Html.DropDownList("iddistrito", String.Empty)
+                        @Html.ValidationMessageFor(model => model.iddistrito)
+				 	 </div>
+				</div>
+             <div class="col-md-6">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Referencia</label>
+                        @Html.TextAreaFor(model => model.entrega_ref, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.entrega_ref) 
+				       
+				 	 </div>
+				</div>
+         
+
+            <h3 class="page-subheading">Detalle del Pedido</h3>
+               <div class="col-md-12">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Productos:</label>
+
+				       
+				 	 </div>
+				</div>
+            <div class="col-md-12" style="display:none;">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Total Pedido: S/120.00</label>
+
+				 	 </div>
+				</div>
+            <div class="col-md-12">
+					<div class="form-group">
+				    <label for="exampleInputEmail1">Notas</label>
+
+				        @Html.TextAreaFor(model => model.notas, new { @class = "form-control"})
+                        @Html.ValidationMessageFor(model => model.notas)
+				 	 </div>
+				</div>
+
+
+					</div>
+					
+		<div class="submit clearfix">
+            <div class="col-md-12">	
+			<input type="hidden" name="email_create" value="1">
+			<input type="hidden" name="is_new_customer" value="1">
+			<input type="hidden" class="hidden" name="back" value="http://tiendapasteleria.esy.es/prestashop/pedido?step=1">			<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium">
+				<span>Generar<i class="icon-chevron-right right"></i></span>
+			</button>
+			
+		</div>
+            </div>
+</form>
+	
+					</div><!-- #center_column -->
+										</div><!-- .row -->
+				
+</div></div>
+
+<script type="text/javascript">
+    function solonumeros(e) {
+
+        var key;
+
+        if (window.event) // IE
+        {
+            key = e.keyCode;
+        }
+        else if (e.which) // Netscape/Firefox/Opera
+        {
+            key = e.which;
+        }
+
+        if (key < 48 || key > 57) {
+            return false;
+        }
+
+        return true;
+    }
+</script>

@@ -1,0 +1,37 @@
+﻿@model APP_MVC02a.Models.categoriaIn
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>categoriaIn</legend>
+
+        @Html.HiddenFor(model => model.idcategoriaIn)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.descrip)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.descrip)
+            @Html.ValidationMessageFor(model => model.descrip)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

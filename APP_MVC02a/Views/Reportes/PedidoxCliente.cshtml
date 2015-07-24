@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "PedidoxCliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reporte de Pedidos por cliente</h2>
+<form action="PedidoxCliente1" method="post" target="iFraverReporte">
+   <fieldset>
+       <table>
+           <tr>
+               <td>Cliente:
+      
+                   <input type="text" name="idCliente" onkeypress="javascript:return solonumeros(event)" />
+               </td>
+               </tr>
+               <tr>
+               <td>
+                   Desde:
+                   <input type="text" name="fecha1" id="fecha1"/>
+               </td>
+               <td>
+                   Hasta:
+                   <input type="text" name="fecha2" id="fecha2"/>
+               </td>
+           </tr>
+       </table>
+       <input type="submit"  value="Consultar"/>
+   </fieldset>
+</form>
+
+<iframe id="iFraverReporte"  name="iFraverReporte" width="1000" height="450">
+
+</iframe>
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>
+<script>
+    $("#fecha1").datepicker({ dateFormat: "dd/mm/yy" }).mask("99/99/9999");
+        $.validator.addMethod('date',
+        function (value, element, params) {
+            if (this.optional(element)) {
+                return true;
+            }
+            var ok = true;
+            try {
+                $.datepicker.parseDate('dd/mm/yy', value);
+            }
+            catch (err) {
+                ok = false;
+            }
+            return ok;
+        });
+
+        function solonumeros(e) {
+
+            var key;
+
+            if (window.event) // IE
+            {
+                key = e.keyCode;
+            }
+            else if (e.which) // Netscape/Firefox/Opera
+            {
+                key = e.which;
+            }
+
+            if (key < 48 || key > 57) {
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+
+<script>
+    $("#fecha2").datepicker({ dateFormat: "dd/mm/yy" }).mask("99/99/9999");
+    $.validator.addMethod('date',
+    function (value, element, params) {
+        if (this.optional(element)) {
+            return true;
+        }
+        var ok = true;
+        try {
+            $.datepicker.parseDate('dd/mm/yy', value);
+        }
+        catch (err) {
+            ok = false;
+        }
+        return ok;
+    });
+
+    </script>

@@ -1,0 +1,53 @@
+﻿@model APP_MVC02a.Models.insumo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>insumo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nomInsumo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nomInsumo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stock)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stock)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaVenc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaVenc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tipo_medida.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tipo_medida.descrip)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.categoriaIn.descrip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.categoriaIn.descrip)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

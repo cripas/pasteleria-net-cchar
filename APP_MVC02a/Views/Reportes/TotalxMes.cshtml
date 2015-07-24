@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "TotalxMes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reporte de Ventas por Mes y Año</h2>
+<form action="TotalxMes1" method="post" target="iFraverReporte">
+    <fieldset>
+        <table>
+            <tr>
+                <td>
+                    Mes:
+                    <input type="text" name="mes" id="mes" />
+                </td>
+                <td>
+                    Año:
+                    <input type="text" name="año" id="año" />
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Consultar" />
+    </fieldset>
+</form>
+<iframe id="iFraverReporte" name="iFraverReporte" width="1000" height="450"></iframe>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>
+<script>
+    $("#mes").datepicker({
+        currentText: 'Hoy',
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
+        dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+        dateFormat: "MM", changeMonth: true,
+        beforeShow: function (e, t) {
+            $(this).datepicker("hide");
+            $("#ui-datepicker-div").addClass("hide-calendar");
+            $("#ui-datepicker-div").addClass('MonthDatePicker');
+            $("#ui-datepicker-div").addClass('HideTodayButton');
+        },
+        onClose: function (dateText, inst) {
+            var n = Math.abs($("#ui-datepicker-div .ui-datepicker-month :selected").val() - 1) + 2;
+            $(this).datepicker("setDate", new Date(null, n, null));
+        }
+    }).mask("mm");
+    $.validator.addMethod('date',
+    function (value, element, params) {
+        if (this.optional(element)) {
+            return true;
+        }
+        var ok = true;
+        try {
+            $.datepicker.parseDate('MM', value);
+        }
+        catch (err) {
+            ok = false;
+        }
+        return ok;
+    });
+    $.datepicker.setDefaults($.datepicker);
+
+</script>
+
+<script>
+    $("#año").datepicker({
+        dateFormat: "yy", changeYear: true,
+        onClose: function (dateText, inst) {
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            $(this).datepicker('setDate', new Date(year, 1));
+        }
+    }).mask("YY");
+    $.validator.addMethod('date',
+    function (value, element, params) {
+        if (this.optional(element)) {
+            return true;
+        }
+        var ok = true;
+        try {
+            $.datepicker.parseDate('yy', value);
+        }
+        catch (err) {
+            ok = false;
+        }
+        return ok;
+    });
+
+</script>

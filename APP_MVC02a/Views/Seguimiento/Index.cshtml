@@ -1,0 +1,57 @@
+﻿@model IEnumerable<APP_MVC02a.Models.pedido>
+@{
+    ViewBag.Title = "Seguimiento de Pedidos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="box">
+	<div class="box-header">
+		<h3 class="box-title">Evaluar Solicitudes Pre - Venta</h3>
+	</div>
+	<!-- /.box-header -->
+	<div class="box-body table-responsive">
+	<!-- 	<div style="padding-bottom: 10px;">
+			<a href="#myModal" class="btn btn-success btn-flat"
+				data-toggle="modal" onclick="btnNuevo()">Registrar Nuevo
+				Empleado</a>
+		</div> -->
+
+		<table id="idListadoSolicitud" class="table table-bordered table-striped table-condensed table-hover">
+			<thead>
+				<tr>
+					<th>Código de Pedido</th>
+					<th>ID Cliente</th>
+					<th>Precio Total</th>
+					<th>Fecha Generado</th>
+                    <th>Estado</th>
+					<th>Detalle</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model) {
+                                        <tr>
+                                            <td> @Html.DisplayFor(modelItem => item.idpedido)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.idCliente)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.totalpedido)</td>
+                                             <td> @Html.DisplayFor(modelItem => item.fechaPedido)</td>
+                                            <td> <a  class="btn btn-primary btn-xs" >@Html.DisplayFor(modelItem => item.estado.descrip)</a></td>
+                                             <td><a  class="btn btn-warning btn-xs" href="Seguimiento/Seguimiento?idPedido=@item.idpedido">Ver detalles</a></td>
+   
+                                            
+                                        </tr>
+                                            }
+
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Código de Pedido</th>
+					<th>ID Cliente</th>
+					<th>Precio Total</th>
+					<th>Fecha Generado</th>
+					<th>Detalle</th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<!-- /.box-body -->
+</div>
